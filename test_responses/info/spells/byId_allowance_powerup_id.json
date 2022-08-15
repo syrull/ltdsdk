@@ -1,0 +1,8 @@
+{
+    "_id": "allowance_powerup_id",
+    "category": "spells",
+    "enabled": true,
+    "iconPath": "Icons/Allowance.png",
+    "name": "Allowance",
+    "tooltip": "+100 gold"
+  }

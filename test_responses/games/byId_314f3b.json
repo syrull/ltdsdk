@@ -1,0 +1,4829 @@
+{
+    "_id": "314f3b9258f5f84b36301ac596dde8d308dcdbfbf199decbb0c1c9e0fac21321",
+    "version": "v8.04.3",
+    "date": "2021-11-06T13:37:00.000Z",
+    "queueType": "Classic",
+    "endingWave": 20,
+    "gameLength": 2102,
+    "gameElo": 1094,
+    "playerCount": 8,
+    "humanCount": 8,
+    "spellChoices": [
+      "sorcerer_spell_damage_powerup_id",
+      "giant_snail_powerup_id",
+      "hero_powerup_id"
+    ],
+    "leftKingPercentHp": [
+      1,
+      1,
+      1,
+      0.7,
+      0.7,
+      0.705,
+      0.71,
+      0.72,
+      0.73,
+      0.74,
+      0.75,
+      0.78,
+      0.82,
+      0.855,
+      0.89,
+      0.935,
+      0.665,
+      0.235,
+      0.32,
+      0
+    ],
+    "rightKingPercentHp": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0.775,
+      0.785,
+      0.805,
+      0.84,
+      0.885,
+      0.925,
+      0.97,
+      1,
+      0.945,
+      1,
+      1
+    ],
+    "kingSpell": "lightning_hammer_activator_ability_id",
+    "playersData": [
+      {
+        "playerId": "EF659DA758338846",
+        "playerName": "Catbait",
+        "playerSlot": 1,
+        "legion": "Mastermind",
+        "workers": 44,
+        "value": 7710,
+        "cross": false,
+        "gameResult": "lost",
+        "overallElo": 1383,
+        "fighters": "Mudman,Golem,Doomsday Machine,Antler,Golem,Golem,Fenix,Antler,Tempest,Leviathan,Fenix,Doomsday Machine,Leviathan,Leviathan,Golem,Veteran,Leviathan,Golem,Veteran,Veteran,Veteran,Whitemane",
+        "mercenaries": "Snail,Dragon Turtle,Dragon Turtle,Dragon Turtle,Snail,Dino,Dragon Turtle,Pack Leader,Fiend,Cannoneer,Dino,Fiend,Dragon Turtle,Cannoneer,Lizard,Lizard,Cannoneer,Fiend,Cannoneer,Cannoneer,Dino,Cannoneer,Cannoneer,Cannoneer,Dragon Turtle,Snail,Cannoneer,Cannoneer,Cannoneer,Cannoneer,Lizard,Lizard,Cannoneer,Cannoneer,Cannoneer,Cannoneer,Cannoneer,Dino,Lizard,Snail",
+        "stayedUntilEnd": false,
+        "chosenSpell": "Hero",
+        "partySize": 1,
+        "firstWaveFighters": "Antler",
+        "rolls": "peewee_unit_id, tempest_unit_id, mudman_unit_id, antler_unit_id, fire_lord_unit_id, millennium_unit_id",
+        "legionSpecificElo": 1630,
+        "partyMembers": [
+          "Catbait"
+        ],
+        "partyMembersIds": [
+          "EF659DA758338846"
+        ],
+        "mvpScore": 13175,
+        "netWorthPerWave": [
+          433,
+          555,
+          669,
+          825,
+          994,
+          1199,
+          1431,
+          1701,
+          1964,
+          2398,
+          2668,
+          3155,
+          3689,
+          4350,
+          5025,
+          5859,
+          6886,
+          7972,
+          9358,
+          9665
+        ],
+        "workersPerWave": [
+          3,
+          4,
+          5,
+          5,
+          6,
+          7,
+          9,
+          9,
+          10,
+          15,
+          17,
+          17,
+          18,
+          18,
+          18,
+          26,
+          30,
+          42,
+          44,
+          44
+        ],
+        "incomePerWave": [
+          11,
+          23,
+          23,
+          47,
+          59,
+          71,
+          95,
+          107,
+          107,
+          171,
+          195,
+          273,
+          291,
+          375,
+          429,
+          501,
+          597,
+          729,
+          921,
+          975
+        ],
+        "mercenariesSentPerWave": [
+          [],
+          [],
+          [
+            "Snail"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Snail"
+          ],
+          [
+            "Dino",
+            "Dragon Turtle"
+          ],
+          [],
+          [
+            "Pack Leader"
+          ],
+          [
+            "Fiend"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [
+            "Dino",
+            "Fiend"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Cannoneer",
+            "Lizard",
+            "Lizard"
+          ],
+          [
+            "Cannoneer",
+            "Fiend"
+          ],
+          [
+            "Cannoneer",
+            "Dino",
+            "Cannoneer"
+          ],
+          [
+            "Cannoneer",
+            "Cannoneer",
+            "Snail",
+            "Cannoneer",
+            "Dragon Turtle"
+          ],
+          [
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer",
+            "Lizard",
+            "Lizard"
+          ],
+          [
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer",
+            "Lizard",
+            "Snail",
+            "Cannoneer",
+            "Dino"
+          ]
+        ],
+        "mercenariesReceivedPerWave": [
+          [],
+          [
+            "Dragon Turtle"
+          ],
+          [],
+          [],
+          [
+            "Cannoneer"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Brute"
+          ],
+          [
+            "Dino"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Fiend"
+          ],
+          [
+            "Giant Snail",
+            "Giant Snail",
+            "Giant Snail",
+            "Giant Snail",
+            "Giant Snail"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [
+            "Mimic",
+            "Cannoneer"
+          ],
+          [
+            "Dino"
+          ],
+          [
+            "Cannoneer",
+            "Cannoneer"
+          ],
+          [
+            "Mimic",
+            "Dino"
+          ],
+          [
+            "Cannoneer",
+            "Dino"
+          ],
+          [
+            "Four Eyes"
+          ],
+          [
+            "Four Eyes",
+            "Cannoneer",
+            "Cannoneer",
+            "Dino",
+            "Dragon Turtle",
+            "Giant Snail",
+            "Giant Snail",
+            "Giant Snail",
+            "Giant Snail"
+          ]
+        ],
+        "leaksPerWave": [
+          [],
+          [],
+          [],
+          [],
+          [
+            "Scorpion",
+            "Scorpion",
+            "Scorpion",
+            "Cannoneer"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Quill Shooter",
+            "Quill Shooter",
+            "Quill Shooter",
+            "Quill Shooter",
+            "Quill Shooter",
+            "Quill Shooter",
+            "Quill Shooter"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Maccabeus",
+            "Cannoneer",
+            "Cannoneer",
+            "Four Eyes"
+          ]
+        ],
+        "buildPerWave": [
+          [
+            "antler_unit_id:2.5|8.5"
+          ],
+          [
+            "antler_unit_id:2.5|8.5"
+          ],
+          [
+            "antler_unit_id:2.5|8.5",
+            "peewee_unit_id:3|7.5",
+            "peewee_unit_id:2|7.5",
+            "peewee_unit_id:3.5|8.5"
+          ],
+          [
+            "antler_unit_id:2.5|8.5",
+            "peewee_unit_id:3|7.5",
+            "peewee_unit_id:2|7.5",
+            "veteran_unit_id:3.5|8.5"
+          ],
+          [
+            "antler_unit_id:2.5|8.5",
+            "peewee_unit_id:3|7.5",
+            "peewee_unit_id:2|7.5",
+            "veteran_unit_id:3.5|8.5",
+            "mudman_unit_id:3|9.5"
+          ],
+          [
+            "antler_unit_id:2.5|8.5",
+            "peewee_unit_id:3|7.5",
+            "peewee_unit_id:2|7.5",
+            "veteran_unit_id:3.5|8.5",
+            "mudman_unit_id:3|9.5",
+            "tempest_unit_id:2.5|6.5"
+          ],
+          [
+            "antler_unit_id:2.5|8.5",
+            "veteran_unit_id:3|7.5",
+            "veteran_unit_id:2|7.5",
+            "veteran_unit_id:3.5|8.5",
+            "mudman_unit_id:3|9.5",
+            "tempest_unit_id:2.5|6.5"
+          ],
+          [
+            "antler_unit_id:2.5|8.5",
+            "veteran_unit_id:3|7.5",
+            "veteran_unit_id:2|7.5",
+            "veteran_unit_id:3.5|8.5",
+            "mudman_unit_id:3|9.5",
+            "tempest_unit_id:2.5|6.5",
+            "veteran_unit_id:1.5|8.5"
+          ],
+          [
+            "antler_unit_id:2.5|8.5",
+            "veteran_unit_id:3|7.5",
+            "veteran_unit_id:2|7.5",
+            "veteran_unit_id:3.5|8.5",
+            "golem_unit_id:3|9.5",
+            "tempest_unit_id:2.5|6.5",
+            "veteran_unit_id:1.5|8.5"
+          ],
+          [
+            "antler_unit_id:2.5|8.5",
+            "veteran_unit_id:3|7.5",
+            "veteran_unit_id:2|7.5",
+            "veteran_unit_id:3.5|8.5",
+            "golem_unit_id:3|9.5",
+            "leviathan_unit_id:2.5|6.5",
+            "veteran_unit_id:1.5|8.5"
+          ],
+          [
+            "antler_unit_id:2.5|8.5",
+            "veteran_unit_id:3|7.5",
+            "veteran_unit_id:2|7.5",
+            "veteran_unit_id:3.5|8.5",
+            "golem_unit_id:3|9.5",
+            "leviathan_unit_id:2.5|6.5",
+            "veteran_unit_id:1.5|8.5",
+            "mudman_unit_id:2|9.5"
+          ],
+          [
+            "antler_unit_id:2.5|8.5",
+            "veteran_unit_id:3|7.5",
+            "veteran_unit_id:2|7.5",
+            "veteran_unit_id:3.5|8.5",
+            "golem_unit_id:3|9.5",
+            "leviathan_unit_id:2.5|6.5",
+            "veteran_unit_id:1.5|8.5",
+            "mudman_unit_id:2|9.5",
+            "leviathan_unit_id:3.5|6"
+          ],
+          [
+            "whitemane_unit_id:2.5|8.5",
+            "veteran_unit_id:3|7.5",
+            "veteran_unit_id:2|7.5",
+            "veteran_unit_id:3.5|8.5",
+            "golem_unit_id:3|9.5",
+            "leviathan_unit_id:2.5|6.5",
+            "veteran_unit_id:1.5|8.5",
+            "mudman_unit_id:2|9.5",
+            "leviathan_unit_id:3.5|6",
+            "tempest_unit_id:1.5|6"
+          ],
+          [
+            "whitemane_unit_id:2.5|8.5",
+            "veteran_unit_id:3|7.5",
+            "veteran_unit_id:2|7.5",
+            "veteran_unit_id:3.5|8.5",
+            "golem_unit_id:3|9.5",
+            "leviathan_unit_id:2.5|6.5",
+            "veteran_unit_id:1.5|8.5",
+            "mudman_unit_id:2|9.5",
+            "leviathan_unit_id:3.5|6",
+            "leviathan_unit_id:1.5|6",
+            "millennium_unit_id:0.5|7"
+          ],
+          [
+            "whitemane_unit_id:2.5|8.5",
+            "veteran_unit_id:3|7.5",
+            "veteran_unit_id:2|7.5",
+            "veteran_unit_id:3.5|8.5",
+            "golem_unit_id:3|9.5",
+            "leviathan_unit_id:2.5|6.5",
+            "veteran_unit_id:1.5|8.5",
+            "mudman_unit_id:2|9.5",
+            "leviathan_unit_id:3.5|6",
+            "leviathan_unit_id:1.5|6",
+            "millennium_unit_id:0.5|7",
+            "fenix_unit_id:0.5|6"
+          ],
+          [
+            "whitemane_unit_id:2.5|8.5",
+            "veteran_unit_id:3|7.5",
+            "veteran_unit_id:2|7.5",
+            "veteran_unit_id:3.5|8.5",
+            "golem_unit_id:3|9.5",
+            "leviathan_unit_id:2.5|6.5",
+            "veteran_unit_id:1.5|8.5",
+            "golem_unit_id:2|9.5",
+            "leviathan_unit_id:3.5|6",
+            "leviathan_unit_id:1.5|6",
+            "millennium_unit_id:0.5|7",
+            "fenix_unit_id:0.5|6",
+            "leviathan_unit_id:4.5|6",
+            "tempest_unit_id:0.5|5"
+          ],
+          [
+            "whitemane_unit_id:2.5|8.5",
+            "veteran_unit_id:3|7.5",
+            "veteran_unit_id:2|7.5",
+            "veteran_unit_id:3.5|8.5",
+            "golem_unit_id:3|9.5",
+            "leviathan_unit_id:2.5|6.5",
+            "veteran_unit_id:1.5|8.5",
+            "golem_unit_id:2|9.5",
+            "leviathan_unit_id:3.5|6",
+            "leviathan_unit_id:1.5|6",
+            "doomsday_machine_unit_id:0.5|7",
+            "fenix_unit_id:0.5|6",
+            "leviathan_unit_id:4.5|6",
+            "tempest_unit_id:0.5|5",
+            "antler_unit_id:0.5|8"
+          ],
+          [
+            "whitemane_unit_id:2.5|8.5",
+            "veteran_unit_id:3|7.5",
+            "veteran_unit_id:2|7.5",
+            "veteran_unit_id:3.5|8.5",
+            "golem_unit_id:3|9.5",
+            "leviathan_unit_id:2.5|6.5",
+            "veteran_unit_id:1.5|8.5",
+            "golem_unit_id:2|9.5",
+            "leviathan_unit_id:3.5|6",
+            "leviathan_unit_id:1.5|6",
+            "doomsday_machine_unit_id:0.5|7",
+            "fenix_unit_id:0.5|6",
+            "leviathan_unit_id:4.5|6",
+            "tempest_unit_id:0.5|5",
+            "antler_unit_id:0.5|8",
+            "fenix_unit_id:4.5|5",
+            "mudman_unit_id:0.5|10"
+          ],
+          [
+            "whitemane_unit_id:2.5|8.5",
+            "veteran_unit_id:3|7.5",
+            "veteran_unit_id:2|7.5",
+            "veteran_unit_id:3.5|8.5",
+            "golem_unit_id:3|9.5",
+            "leviathan_unit_id:2.5|6.5",
+            "veteran_unit_id:1.5|8.5",
+            "golem_unit_id:2|9.5",
+            "leviathan_unit_id:3.5|6",
+            "leviathan_unit_id:1.5|6",
+            "doomsday_machine_unit_id:0.5|7",
+            "fenix_unit_id:0.5|6",
+            "leviathan_unit_id:4.5|6",
+            "tempest_unit_id:0.5|5",
+            "antler_unit_id:0.5|8",
+            "fenix_unit_id:4.5|5",
+            "golem_unit_id:0.5|10",
+            "golem_unit_id:0.5|11",
+            "antler_unit_id:0.5|9"
+          ],
+          [
+            "whitemane_unit_id:2.5|8.5",
+            "veteran_unit_id:3|7.5",
+            "veteran_unit_id:2|7.5",
+            "veteran_unit_id:3.5|8.5",
+            "golem_unit_id:3|9.5",
+            "leviathan_unit_id:2.5|6.5",
+            "veteran_unit_id:1.5|8.5",
+            "golem_unit_id:2|9.5",
+            "leviathan_unit_id:3.5|6",
+            "leviathan_unit_id:1.5|6",
+            "doomsday_machine_unit_id:0.5|7",
+            "fenix_unit_id:0.5|6",
+            "leviathan_unit_id:4.5|6",
+            "tempest_unit_id:0.5|5",
+            "antler_unit_id:0.5|8",
+            "fenix_unit_id:4.5|5",
+            "golem_unit_id:0.5|10",
+            "golem_unit_id:0.5|11",
+            "antler_unit_id:0.5|9",
+            "doomsday_machine_unit_id:2.5|5",
+            "golem_unit_id:0.5|12",
+            "mudman_unit_id:0.5|13"
+          ]
+        ],
+        "leakValue": 231,
+        "leaksCaughtValue": 624,
+        "leftAtSeconds": 1332.84110030149,
+        "kingUpgradesPerWave": [
+          [
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack"
+          ],
+          [],
+          [],
+          [],
+          [
+            "Upgrade King Attack"
+          ],
+          [],
+          [],
+          [],
+          [
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack",
+            "Upgrade King Attack",
+            "Upgrade King Spell",
+            "Upgrade King Spell"
+          ],
+          [
+            "Upgrade King Regen",
+            "Upgrade King Regen",
+            "Upgrade King Regen",
+            "Upgrade King Regen"
+          ],
+          [],
+          [
+            "Upgrade King Spell",
+            "Upgrade King Spell",
+            "Upgrade King Spell",
+            "Upgrade King Spell",
+            "Upgrade King Spell",
+            "Upgrade King Spell",
+            "Upgrade King Spell"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "opponentKingUpgradesPerWave": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "playerId": "7AEC6D38C74A5323",
+        "playerName": "Spiderbanana",
+        "playerSlot": 2,
+        "legion": "Mastermind",
+        "workers": 59,
+        "value": 7015,
+        "cross": false,
+        "gameResult": "lost",
+        "overallElo": 1416,
+        "fighters": "Butcher,Azeria,Whitemane,Whitemane,Lioness,King Claw,Whitemane,Pyro,Pyro,Zeus,Pyro,Deepcoiler,Deepcoiler,Ocean Templar,Orchid,Deepcoiler,Head Chef,Orchid,Atom,Orchid,Atom,Atom,Samurai Soul",
+        "mercenaries": "Brute,Snail,Dragon Turtle,Fiend,Dragon Turtle,Drake,Dragon Turtle,Fiend,Dino,Drake,Dragon Turtle,Hermit,Dino,Cannoneer,Pack Leader,Brute,Drake,Dino,Drake,Cannoneer,Four Eyes,Pack Leader,Safety Mole,Brute,Snail,Drake,Dino,Dino,Drake,Cannoneer,Cannoneer",
+        "stayedUntilEnd": true,
+        "chosenSpell": "Hero",
+        "partySize": 1,
+        "firstWaveFighters": "Eternal Wanderer",
+        "rolls": "proton_unit_id, infiltrator_unit_id, sea_serpent_unit_id, eternal_wanderer_unit_id, grarl_unit_id, butcher_unit_id",
+        "legionSpecificElo": 1455,
+        "partyMembers": [
+          "Spiderbanana"
+        ],
+        "partyMembersIds": [
+          "7AEC6D38C74A5323"
+        ],
+        "mvpScore": 14702,
+        "netWorthPerWave": [
+          431,
+          521,
+          642,
+          793,
+          987,
+          1193,
+          1391,
+          1680,
+          1980,
+          2436,
+          2798,
+          3260,
+          3805,
+          4408,
+          5009,
+          5863,
+          6758,
+          7949,
+          9076,
+          9509
+        ],
+        "workersPerWave": [
+          4,
+          4,
+          5,
+          6,
+          7,
+          8,
+          8,
+          9,
+          12,
+          14,
+          15,
+          18,
+          21,
+          21,
+          21,
+          33,
+          37,
+          45,
+          57,
+          59
+        ],
+        "incomePerWave": [
+          9,
+          15,
+          30,
+          48,
+          66,
+          84,
+          90,
+          126,
+          156,
+          192,
+          240,
+          278,
+          332,
+          387,
+          447,
+          525,
+          625,
+          760,
+          856,
+          856
+        ],
+        "mercenariesSentPerWave": [
+          [],
+          [],
+          [],
+          [
+            "Brute",
+            "Snail"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Fiend"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [],
+          [
+            "Drake",
+            "Dragon Turtle"
+          ],
+          [
+            "Fiend"
+          ],
+          [
+            "Dino"
+          ],
+          [
+            "Drake",
+            "Dragon Turtle"
+          ],
+          [
+            "Hermit",
+            "Dino"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [
+            "Pack Leader",
+            "Brute"
+          ],
+          [
+            "Drake",
+            "Dino"
+          ],
+          [
+            "Drake",
+            "Cannoneer"
+          ],
+          [
+            "Four Eyes",
+            "Pack Leader",
+            "Safety Mole",
+            "Brute",
+            "Snail"
+          ],
+          [
+            "Drake",
+            "Dino",
+            "Dino"
+          ],
+          [
+            "Cannoneer",
+            "Cannoneer",
+            "Drake"
+          ]
+        ],
+        "mercenariesReceivedPerWave": [
+          [],
+          [],
+          [],
+          [
+            "Dragon Turtle",
+            "Snail"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [],
+          [
+            "Dragon Turtle",
+            "Dragon Turtle",
+            "Dragon Turtle",
+            "Snail"
+          ],
+          [
+            "Dragon Turtle",
+            "Dragon Turtle"
+          ],
+          [],
+          [],
+          [
+            "Ghost Knight",
+            "Hermit",
+            "Lizard",
+            "Snail"
+          ],
+          [],
+          [],
+          [],
+          [
+            "Ghost Knight",
+            "Ghost Knight",
+            "Safety Mole",
+            "Snail",
+            "Snail",
+            "Snail",
+            "Snail",
+            "Snail",
+            "Snail"
+          ],
+          [
+            "Cannoneer",
+            "Cannoneer"
+          ],
+          [
+            "Safety Mole",
+            "Cannoneer",
+            "Cannoneer",
+            "Lizard"
+          ],
+          [
+            "Safety Mole",
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer",
+            "Lizard"
+          ],
+          [
+            "Ghost Knight",
+            "Ghost Knight",
+            "Safety Mole"
+          ],
+          [
+            "Safety Mole",
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer"
+          ]
+        ],
+        "leaksPerWave": [
+          [],
+          [
+            "Wale",
+            "Wale",
+            "Wale"
+          ],
+          [],
+          [
+            "Flying Chicken",
+            "Flying Chicken",
+            "Flying Chicken",
+            "Flying Chicken",
+            "Flying Chicken",
+            "Flying Chicken"
+          ],
+          [],
+          [],
+          [
+            "Blob",
+            "Sludge",
+            "Sludge",
+            "Sludge",
+            "Sludge",
+            "Sludge",
+            "Dragon Turtle"
+          ],
+          [],
+          [],
+          [],
+          [
+            "Quill Shooter",
+            "Quill Shooter",
+            "Quill Shooter",
+            "Quill Shooter",
+            "Quill Shooter",
+            "Quill Shooter",
+            "Quill Shooter",
+            "Quill Shooter",
+            "Quill Shooter",
+            "Quill Shooter",
+            "Quill Shooter",
+            "Hermit"
+          ],
+          [],
+          [],
+          [],
+          [
+            "Giant Quadrapus",
+            "Quadrapus",
+            "Quadrapus",
+            "Quadrapus",
+            "Quadrapus",
+            "Quadrapus",
+            "Quadrapus",
+            "Quadrapus",
+            "Quadrapus",
+            "Ghost Knight"
+          ],
+          [],
+          [
+            "Metal Dragon",
+            "Metal Dragon",
+            "Metal Dragon",
+            "Metal Dragon",
+            "Metal Dragon",
+            "Metal Dragon"
+          ],
+          [
+            "Wale Chief",
+            "Wale Chief"
+          ],
+          [
+            "Dire Toad",
+            "Dire Toad",
+            "Dire Toad",
+            "Dire Toad",
+            "Dire Toad",
+            "Dire Toad",
+            "Dire Toad",
+            "Dire Toad"
+          ],
+          [
+            "Maccabeus"
+          ]
+        ],
+        "buildPerWave": [
+          [
+            "eternal_wanderer_unit_id:1.5|4.5"
+          ],
+          [
+            "eternal_wanderer_unit_id:1.5|4.5",
+            "proton_unit_id:8.5|1",
+            "proton_unit_id:8.5|2"
+          ],
+          [
+            "eternal_wanderer_unit_id:1.5|4.5",
+            "proton_unit_id:8.5|1",
+            "proton_unit_id:8.5|2",
+            "infiltrator_unit_id:0.5|4",
+            "proton_unit_id:8.5|3"
+          ],
+          [
+            "eternal_wanderer_unit_id:1.5|4.5",
+            "proton_unit_id:8.5|1",
+            "atom_unit_id:8.5|2",
+            "infiltrator_unit_id:0.5|4",
+            "proton_unit_id:8.5|3"
+          ],
+          [
+            "eternal_wanderer_unit_id:1.5|4.5",
+            "proton_unit_id:8.5|1",
+            "atom_unit_id:8.5|2",
+            "infiltrator_unit_id:0.5|4",
+            "proton_unit_id:8.5|3",
+            "infiltrator_unit_id:0.5|3"
+          ],
+          [
+            "eternal_wanderer_unit_id:1.5|4.5",
+            "proton_unit_id:8.5|1",
+            "atom_unit_id:8.5|2",
+            "infiltrator_unit_id:0.5|4",
+            "proton_unit_id:8.5|3",
+            "infiltrator_unit_id:0.5|3",
+            "butcher_unit_id:1.5|3.5"
+          ],
+          [
+            "eternal_wanderer_unit_id:1.5|4.5",
+            "proton_unit_id:8.5|1",
+            "atom_unit_id:8.5|2",
+            "infiltrator_unit_id:0.5|4",
+            "proton_unit_id:8.5|3",
+            "infiltrator_unit_id:0.5|3",
+            "butcher_unit_id:1.5|3.5",
+            "sea_serpent_unit_id:5.5|13.5",
+            "infiltrator_unit_id:1.5|2.5"
+          ],
+          [
+            "eternal_wanderer_unit_id:1.5|4.5",
+            "proton_unit_id:8.5|1",
+            "atom_unit_id:8.5|2",
+            "infiltrator_unit_id:0.5|4",
+            "proton_unit_id:8.5|3",
+            "infiltrator_unit_id:0.5|3",
+            "butcher_unit_id:1.5|3.5",
+            "sea_serpent_unit_id:5.5|13.5",
+            "orchid_unit_id:1.5|2.5"
+          ],
+          [
+            "eternal_wanderer_unit_id:1.5|4.5",
+            "proton_unit_id:8.5|1",
+            "atom_unit_id:8.5|2",
+            "infiltrator_unit_id:0.5|4",
+            "proton_unit_id:8.5|3",
+            "infiltrator_unit_id:0.5|3",
+            "butcher_unit_id:1.5|3.5",
+            "sea_serpent_unit_id:5.5|13.5",
+            "orchid_unit_id:1.5|2.5",
+            "grarl_unit_id:2.5|4",
+            "sea_serpent_unit_id:4.5|13.5"
+          ],
+          [
+            "eternal_wanderer_unit_id:1.5|4.5",
+            "atom_unit_id:8.5|1",
+            "atom_unit_id:8.5|2",
+            "infiltrator_unit_id:0.5|4",
+            "atom_unit_id:8.5|3",
+            "infiltrator_unit_id:0.5|3",
+            "butcher_unit_id:1.5|3.5",
+            "sea_serpent_unit_id:5.5|13.5",
+            "orchid_unit_id:1.5|2.5",
+            "grarl_unit_id:2.5|4",
+            "sea_serpent_unit_id:4.5|13.5"
+          ],
+          [
+            "eternal_wanderer_unit_id:1.5|4.5",
+            "atom_unit_id:8.5|1",
+            "atom_unit_id:8.5|2",
+            "infiltrator_unit_id:0.5|4",
+            "atom_unit_id:8.5|3",
+            "infiltrator_unit_id:0.5|3",
+            "head_chef_unit_id:1.5|3.5",
+            "sea_serpent_unit_id:5.5|13.5",
+            "orchid_unit_id:1.5|2.5",
+            "grarl_unit_id:2.5|4",
+            "sea_serpent_unit_id:4.5|13.5",
+            "sea_serpent_unit_id:3.5|13.5"
+          ],
+          [
+            "eternal_wanderer_unit_id:1.5|4.5",
+            "atom_unit_id:8.5|1",
+            "atom_unit_id:8.5|2",
+            "infiltrator_unit_id:0.5|4",
+            "atom_unit_id:8.5|3",
+            "infiltrator_unit_id:0.5|3",
+            "head_chef_unit_id:1.5|3.5",
+            "sea_serpent_unit_id:5.5|13.5",
+            "orchid_unit_id:1.5|2.5",
+            "ocean_templar_unit_id:2.5|4",
+            "sea_serpent_unit_id:4.5|13.5",
+            "sea_serpent_unit_id:3.5|13.5"
+          ],
+          [
+            "samurai_soul_unit_id:1.5|4.5",
+            "atom_unit_id:8.5|1",
+            "atom_unit_id:8.5|2",
+            "infiltrator_unit_id:0.5|4",
+            "atom_unit_id:8.5|3",
+            "infiltrator_unit_id:0.5|3",
+            "head_chef_unit_id:1.5|3.5",
+            "sea_serpent_unit_id:5.5|13.5",
+            "orchid_unit_id:1.5|2.5",
+            "ocean_templar_unit_id:2.5|4",
+            "sea_serpent_unit_id:4.5|13.5",
+            "sea_serpent_unit_id:3.5|13.5",
+            "bazooka_unit_id:7.5|1.5",
+            "bazooka_unit_id:7.5|0.5"
+          ],
+          [
+            "samurai_soul_unit_id:1.5|4.5",
+            "atom_unit_id:8.5|1",
+            "atom_unit_id:8.5|2",
+            "infiltrator_unit_id:0.5|4",
+            "atom_unit_id:8.5|3",
+            "infiltrator_unit_id:0.5|3",
+            "head_chef_unit_id:1.5|3.5",
+            "sea_serpent_unit_id:5.5|13.5",
+            "orchid_unit_id:1.5|2.5",
+            "ocean_templar_unit_id:2.5|4",
+            "deepcoiler_unit_id:4.5|13.5",
+            "sea_serpent_unit_id:3.5|13.5",
+            "pyro_unit_id:7.5|1.5",
+            "bazooka_unit_id:7.5|0.5",
+            "bazooka_unit_id:6.5|1"
+          ],
+          [
+            "samurai_soul_unit_id:1.5|4.5",
+            "atom_unit_id:8.5|1",
+            "atom_unit_id:8.5|2",
+            "orchid_unit_id:0.5|4",
+            "atom_unit_id:8.5|3",
+            "orchid_unit_id:0.5|3",
+            "head_chef_unit_id:1.5|3.5",
+            "sea_serpent_unit_id:5.5|13.5",
+            "orchid_unit_id:1.5|2.5",
+            "ocean_templar_unit_id:2.5|4",
+            "deepcoiler_unit_id:4.5|13.5",
+            "sea_serpent_unit_id:3.5|13.5",
+            "pyro_unit_id:7.5|1.5",
+            "bazooka_unit_id:7.5|0.5",
+            "pyro_unit_id:6.5|1",
+            "bazooka_unit_id:6.5|2"
+          ],
+          [
+            "samurai_soul_unit_id:1.5|4.5",
+            "atom_unit_id:8.5|1",
+            "atom_unit_id:8.5|2",
+            "orchid_unit_id:0.5|4",
+            "atom_unit_id:8.5|3",
+            "orchid_unit_id:0.5|3",
+            "head_chef_unit_id:1.5|3.5",
+            "sea_serpent_unit_id:5.5|13.5",
+            "orchid_unit_id:1.5|2.5",
+            "ocean_templar_unit_id:2.5|4",
+            "deepcoiler_unit_id:4.5|13.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "pyro_unit_id:7.5|1.5",
+            "bazooka_unit_id:7.5|0.5",
+            "pyro_unit_id:6.5|1",
+            "pyro_unit_id:6.5|2",
+            "antler_unit_id:2.5|5"
+          ],
+          [
+            "samurai_soul_unit_id:1.5|4.5",
+            "atom_unit_id:8.5|1",
+            "atom_unit_id:8.5|2",
+            "orchid_unit_id:0.5|4",
+            "atom_unit_id:8.5|3",
+            "orchid_unit_id:0.5|3",
+            "head_chef_unit_id:1.5|3.5",
+            "sea_serpent_unit_id:5.5|13.5",
+            "orchid_unit_id:1.5|2.5",
+            "ocean_templar_unit_id:2.5|4",
+            "deepcoiler_unit_id:4.5|13.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "pyro_unit_id:7.5|1.5",
+            "zeus_unit_id:7.5|0.5",
+            "pyro_unit_id:6.5|1",
+            "pyro_unit_id:6.5|2",
+            "antler_unit_id:2.5|5",
+            "king_claw_unit_id:2.5|3"
+          ],
+          [
+            "samurai_soul_unit_id:1.5|4.5",
+            "atom_unit_id:8.5|1",
+            "atom_unit_id:8.5|2",
+            "orchid_unit_id:0.5|4",
+            "atom_unit_id:8.5|3",
+            "orchid_unit_id:0.5|3",
+            "head_chef_unit_id:1.5|3.5",
+            "deepcoiler_unit_id:5.5|13.5",
+            "orchid_unit_id:1.5|2.5",
+            "ocean_templar_unit_id:2.5|4",
+            "deepcoiler_unit_id:4.5|13.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "pyro_unit_id:7.5|1.5",
+            "zeus_unit_id:7.5|0.5",
+            "pyro_unit_id:6.5|1",
+            "pyro_unit_id:6.5|2",
+            "whitemane_unit_id:2.5|5",
+            "king_claw_unit_id:2.5|3",
+            "lioness_unit_id:3.5|4.5"
+          ],
+          [
+            "samurai_soul_unit_id:1.5|4.5",
+            "atom_unit_id:8.5|1",
+            "atom_unit_id:8.5|2",
+            "orchid_unit_id:0.5|4",
+            "atom_unit_id:8.5|3",
+            "orchid_unit_id:0.5|3",
+            "head_chef_unit_id:1.5|3.5",
+            "deepcoiler_unit_id:5.5|13.5",
+            "orchid_unit_id:1.5|2.5",
+            "ocean_templar_unit_id:2.5|4",
+            "deepcoiler_unit_id:4.5|13.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "pyro_unit_id:7.5|1.5",
+            "zeus_unit_id:7.5|0.5",
+            "pyro_unit_id:6.5|1",
+            "pyro_unit_id:6.5|2",
+            "whitemane_unit_id:2.5|5",
+            "king_claw_unit_id:2.5|3",
+            "lioness_unit_id:3.5|4.5",
+            "whitemane_unit_id:2.5|2",
+            "antler_unit_id:3.5|3.5"
+          ],
+          [
+            "samurai_soul_unit_id:1.5|4.5",
+            "atom_unit_id:8.5|1",
+            "atom_unit_id:8.5|2",
+            "orchid_unit_id:0.5|4",
+            "atom_unit_id:8.5|3",
+            "orchid_unit_id:0.5|3",
+            "head_chef_unit_id:1.5|3.5",
+            "deepcoiler_unit_id:5.5|13.5",
+            "orchid_unit_id:1.5|2.5",
+            "ocean_templar_unit_id:2.5|4",
+            "deepcoiler_unit_id:4.5|13.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "pyro_unit_id:7.5|1.5",
+            "zeus_unit_id:7.5|0.5",
+            "pyro_unit_id:6.5|1",
+            "pyro_unit_id:6.5|2",
+            "whitemane_unit_id:2.5|5",
+            "king_claw_unit_id:2.5|3",
+            "lioness_unit_id:3.5|4.5",
+            "whitemane_unit_id:2.5|2",
+            "whitemane_unit_id:3.5|3.5",
+            "azeria_unit_id:3.5|2.5",
+            "butcher_unit_id:4.5|3"
+          ]
+        ],
+        "leakValue": 829,
+        "leaksCaughtValue": 280,
+        "leftAtSeconds": -1,
+        "kingUpgradesPerWave": [
+          [
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack"
+          ],
+          [],
+          [],
+          [],
+          [
+            "Upgrade King Regen"
+          ],
+          [
+            "Upgrade King Regen"
+          ],
+          [],
+          [],
+          [
+            "Upgrade King Attack",
+            "Upgrade King Attack"
+          ],
+          [],
+          [
+            "Upgrade King Regen",
+            "Upgrade King Spell",
+            "Upgrade King Regen"
+          ],
+          [],
+          [],
+          [],
+          [
+            "Upgrade King Regen",
+            "Upgrade King Regen"
+          ],
+          [],
+          [],
+          [],
+          []
+        ],
+        "opponentKingUpgradesPerWave": [
+          [
+            "Upgrade King Spell"
+          ],
+          [
+            "Upgrade King Spell"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "playerId": "96E872D0F572EC6B",
+        "playerName": "Loveee",
+        "playerSlot": 5,
+        "legion": "Mastermind",
+        "workers": 58,
+        "value": 7535,
+        "cross": false,
+        "gameResult": "won",
+        "overallElo": 1259,
+        "fighters": "Doomsday Machine,Doomsday Machine,Great Boar,Red Eyes,Golden Buckler,Doomsday Machine,Red Eyes,Red Eyes,Doomsday Machine,Golden Buckler,Red Eyes,Ranger,Ranger,Daphne,Violet,Royal Guard,Violet,Azeria",
+        "mercenaries": "Dragon Turtle,Snail,Dragon Turtle,Dragon Turtle,Dragon Turtle,Dragon Turtle,Snail,Dragon Turtle,Dragon Turtle,Ghost Knight,Hermit,Lizard,Snail,Ghost Knight,Ghost Knight,Safety Mole,Snail,Snail,Snail,Snail,Snail,Snail,Cannoneer,Cannoneer,Safety Mole,Cannoneer,Cannoneer,Lizard,Safety Mole,Cannoneer,Cannoneer,Cannoneer,Lizard,Ghost Knight,Ghost Knight,Safety Mole,Safety Mole,Cannoneer,Cannoneer,Cannoneer,Cannoneer,Cannoneer,Cannoneer",
+        "stayedUntilEnd": true,
+        "chosenSpell": "Sorcerer",
+        "partySize": 1,
+        "firstWaveFighters": "Priestess Of The Abyss",
+        "rolls": "golden_buckler_unit_id, ranger_unit_id, windhawk_unit_id, priestess_of_the_abyss_unit_id, berserker_unit_id, great_boar_unit_id",
+        "legionSpecificElo": 1508,
+        "partyMembers": [
+          "Loveee"
+        ],
+        "partyMembersIds": [
+          "96E872D0F572EC6B"
+        ],
+        "mvpScore": 15185,
+        "netWorthPerWave": [
+          433,
+          534,
+          665,
+          830,
+          1005,
+          1220,
+          1453,
+          1736,
+          1993,
+          2320,
+          2744,
+          3154,
+          3593,
+          4177,
+          4911,
+          5662,
+          6757,
+          8027,
+          9578,
+          10278
+        ],
+        "workersPerWave": [
+          3,
+          4,
+          5,
+          5,
+          7,
+          7,
+          9,
+          12,
+          14,
+          14,
+          17,
+          17,
+          20,
+          20,
+          20,
+          32,
+          38,
+          50,
+          58,
+          58
+        ],
+        "incomePerWave": [
+          11,
+          17,
+          35,
+          47,
+          47,
+          83,
+          101,
+          113,
+          113,
+          193,
+          211,
+          211,
+          211,
+          373,
+          427,
+          517,
+          619,
+          781,
+          991,
+          1051
+        ],
+        "mercenariesSentPerWave": [
+          [],
+          [],
+          [],
+          [
+            "Dragon Turtle",
+            "Snail"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [],
+          [
+            "Dragon Turtle",
+            "Dragon Turtle",
+            "Dragon Turtle",
+            "Snail"
+          ],
+          [
+            "Dragon Turtle",
+            "Dragon Turtle"
+          ],
+          [],
+          [],
+          [
+            "Ghost Knight",
+            "Hermit",
+            "Lizard",
+            "Snail"
+          ],
+          [],
+          [],
+          [],
+          [
+            "Ghost Knight",
+            "Ghost Knight",
+            "Safety Mole",
+            "Snail",
+            "Snail",
+            "Snail",
+            "Snail",
+            "Snail",
+            "Snail"
+          ],
+          [
+            "Cannoneer",
+            "Cannoneer"
+          ],
+          [
+            "Cannoneer",
+            "Safety Mole",
+            "Cannoneer",
+            "Lizard"
+          ],
+          [
+            "Cannoneer",
+            "Safety Mole",
+            "Cannoneer",
+            "Cannoneer",
+            "Lizard"
+          ],
+          [
+            "Ghost Knight",
+            "Safety Mole",
+            "Ghost Knight"
+          ],
+          [
+            "Safety Mole",
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer"
+          ]
+        ],
+        "mercenariesReceivedPerWave": [
+          [],
+          [],
+          [
+            "Snail"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Snail"
+          ],
+          [
+            "Dino",
+            "Dragon Turtle"
+          ],
+          [],
+          [
+            "Pack Leader"
+          ],
+          [
+            "Fiend"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [
+            "Dino",
+            "Fiend"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Cannoneer",
+            "Lizard",
+            "Lizard"
+          ],
+          [
+            "Cannoneer",
+            "Fiend"
+          ],
+          [
+            "Cannoneer",
+            "Cannoneer",
+            "Dino"
+          ],
+          [
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer",
+            "Dragon Turtle",
+            "Snail"
+          ],
+          [
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer",
+            "Lizard",
+            "Lizard"
+          ],
+          [
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer",
+            "Dino",
+            "Lizard",
+            "Snail"
+          ]
+        ],
+        "leaksPerWave": [
+          [],
+          [],
+          [],
+          [
+            "Flying Chicken",
+            "Flying Chicken",
+            "Flying Chicken",
+            "Flying Chicken"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Granddaddy",
+            "Pack Leader"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Cardinal",
+            "Cardinal",
+            "Cardinal",
+            "Cardinal",
+            "Cannoneer"
+          ],
+          [],
+          [
+            "Wale Chief",
+            "Cannoneer",
+            "Cannoneer",
+            "Cannoneer"
+          ],
+          [],
+          []
+        ],
+        "buildPerWave": [
+          [
+            "priestess_of_the_abyss_unit_id:7.5|4"
+          ],
+          [
+            "priestess_of_the_abyss_unit_id:7.5|4"
+          ],
+          [
+            "priestess_of_the_abyss_unit_id:7.5|4",
+            "windhawk_unit_id:1.5|4.5"
+          ],
+          [
+            "priestess_of_the_abyss_unit_id:7.5|4",
+            "windhawk_unit_id:1.5|4.5",
+            "golden_buckler_unit_id:0.5|4"
+          ],
+          [
+            "priestess_of_the_abyss_unit_id:7.5|4",
+            "violet_unit_id:1.5|4.5",
+            "golden_buckler_unit_id:0.5|4"
+          ],
+          [
+            "priestess_of_the_abyss_unit_id:7.5|4",
+            "violet_unit_id:1.5|4.5",
+            "golden_buckler_unit_id:0.5|4",
+            "windhawk_unit_id:1.5|3.5"
+          ],
+          [
+            "priestess_of_the_abyss_unit_id:7.5|4",
+            "violet_unit_id:1.5|4.5",
+            "golden_buckler_unit_id:0.5|4",
+            "violet_unit_id:1.5|3.5"
+          ],
+          [
+            "priestess_of_the_abyss_unit_id:7.5|4",
+            "violet_unit_id:1.5|4.5",
+            "golden_buckler_unit_id:0.5|4",
+            "violet_unit_id:1.5|3.5",
+            "daphne_unit_id:6.5|3.5"
+          ],
+          [
+            "priestess_of_the_abyss_unit_id:7.5|4",
+            "violet_unit_id:1.5|4.5",
+            "royal_guard_unit_id:0.5|4",
+            "violet_unit_id:1.5|3.5",
+            "daphne_unit_id:6.5|3.5"
+          ],
+          [
+            "priestess_of_the_abyss_unit_id:7.5|4",
+            "violet_unit_id:1.5|4.5",
+            "royal_guard_unit_id:0.5|4",
+            "violet_unit_id:1.5|3.5",
+            "daphne_unit_id:6.5|3.5",
+            "ranger_unit_id:6.5|2.5",
+            "ranger_unit_id:7.5|3"
+          ],
+          [
+            "priestess_of_the_abyss_unit_id:7.5|4",
+            "violet_unit_id:1.5|4.5",
+            "royal_guard_unit_id:0.5|4",
+            "violet_unit_id:1.5|3.5",
+            "daphne_unit_id:6.5|3.5",
+            "ranger_unit_id:6.5|2.5",
+            "ranger_unit_id:7.5|3",
+            "great_boar_unit_id:8.5|0.5",
+            "golden_buckler_unit_id:4.5|13.5"
+          ],
+          [
+            "priestess_of_the_abyss_unit_id:7.5|4",
+            "violet_unit_id:1.5|4.5",
+            "royal_guard_unit_id:0.5|4",
+            "violet_unit_id:1.5|3.5",
+            "daphne_unit_id:6.5|3.5",
+            "ranger_unit_id:6.5|2.5",
+            "ranger_unit_id:7.5|3",
+            "great_boar_unit_id:8.5|0.5",
+            "golden_buckler_unit_id:4.5|13.5",
+            "millennium_unit_id:8.5|3.5"
+          ],
+          [
+            "priestess_of_the_abyss_unit_id:7.5|4",
+            "violet_unit_id:1.5|4.5",
+            "royal_guard_unit_id:0.5|4",
+            "violet_unit_id:1.5|3.5",
+            "daphne_unit_id:6.5|3.5",
+            "ranger_unit_id:6.5|2.5",
+            "ranger_unit_id:7.5|3",
+            "great_boar_unit_id:8.5|0.5",
+            "golden_buckler_unit_id:4.5|13.5",
+            "doomsday_machine_unit_id:8.5|3.5"
+          ],
+          [
+            "priestess_of_the_abyss_unit_id:7.5|4",
+            "violet_unit_id:1.5|4.5",
+            "royal_guard_unit_id:0.5|4",
+            "violet_unit_id:1.5|3.5",
+            "daphne_unit_id:6.5|3.5",
+            "ranger_unit_id:6.5|2.5",
+            "ranger_unit_id:7.5|3",
+            "great_boar_unit_id:8.5|0.5",
+            "golden_buckler_unit_id:4.5|13.5",
+            "doomsday_machine_unit_id:8.5|3.5",
+            "great_boar_unit_id:7.5|0.5"
+          ],
+          [
+            "azeria_unit_id:7.5|4",
+            "violet_unit_id:1.5|4.5",
+            "royal_guard_unit_id:0.5|4",
+            "violet_unit_id:1.5|3.5",
+            "daphne_unit_id:6.5|3.5",
+            "ranger_unit_id:6.5|2.5",
+            "ranger_unit_id:7.5|3",
+            "great_boar_unit_id:8.5|0.5",
+            "golden_buckler_unit_id:4.5|13.5",
+            "doomsday_machine_unit_id:8.5|3.5",
+            "great_boar_unit_id:7.5|0.5",
+            "great_boar_unit_id:6.5|0.5"
+          ],
+          [
+            "azeria_unit_id:7.5|4",
+            "violet_unit_id:1.5|4.5",
+            "royal_guard_unit_id:0.5|4",
+            "violet_unit_id:1.5|3.5",
+            "daphne_unit_id:6.5|3.5",
+            "ranger_unit_id:6.5|2.5",
+            "ranger_unit_id:7.5|3",
+            "red_eyes_unit_id:8.5|0.5",
+            "golden_buckler_unit_id:4.5|13.5",
+            "doomsday_machine_unit_id:8.5|3.5",
+            "great_boar_unit_id:7.5|0.5",
+            "great_boar_unit_id:6.5|0.5"
+          ],
+          [
+            "azeria_unit_id:7.5|4",
+            "violet_unit_id:1.5|4.5",
+            "royal_guard_unit_id:0.5|4",
+            "violet_unit_id:1.5|3.5",
+            "daphne_unit_id:6.5|3.5",
+            "ranger_unit_id:6.5|2.5",
+            "ranger_unit_id:7.5|3",
+            "red_eyes_unit_id:8.5|0.5",
+            "golden_buckler_unit_id:4.5|13.5",
+            "doomsday_machine_unit_id:8.5|3.5",
+            "great_boar_unit_id:7.5|0.5",
+            "great_boar_unit_id:6.5|0.5",
+            "doomsday_machine_unit_id:8.5|2.5"
+          ],
+          [
+            "azeria_unit_id:7.5|4",
+            "violet_unit_id:1.5|4.5",
+            "royal_guard_unit_id:0.5|4",
+            "violet_unit_id:1.5|3.5",
+            "daphne_unit_id:6.5|3.5",
+            "ranger_unit_id:6.5|2.5",
+            "ranger_unit_id:7.5|3",
+            "red_eyes_unit_id:8.5|0.5",
+            "golden_buckler_unit_id:4.5|13.5",
+            "doomsday_machine_unit_id:8.5|3.5",
+            "red_eyes_unit_id:7.5|0.5",
+            "red_eyes_unit_id:6.5|0.5",
+            "doomsday_machine_unit_id:8.5|2.5",
+            "golden_buckler_unit_id:5.5|13.5"
+          ],
+          [
+            "azeria_unit_id:7.5|4",
+            "violet_unit_id:1.5|4.5",
+            "royal_guard_unit_id:0.5|4",
+            "violet_unit_id:1.5|3.5",
+            "daphne_unit_id:6.5|3.5",
+            "ranger_unit_id:6.5|2.5",
+            "ranger_unit_id:7.5|3",
+            "red_eyes_unit_id:8.5|0.5",
+            "golden_buckler_unit_id:4.5|13.5",
+            "doomsday_machine_unit_id:8.5|3.5",
+            "red_eyes_unit_id:7.5|0.5",
+            "red_eyes_unit_id:6.5|0.5",
+            "doomsday_machine_unit_id:8.5|2.5",
+            "golden_buckler_unit_id:5.5|13.5",
+            "red_eyes_unit_id:8.5|1.5",
+            "great_boar_unit_id:7.5|1.5"
+          ],
+          [
+            "azeria_unit_id:7.5|4",
+            "violet_unit_id:1.5|4.5",
+            "royal_guard_unit_id:0.5|4",
+            "violet_unit_id:1.5|3.5",
+            "daphne_unit_id:6.5|3.5",
+            "ranger_unit_id:6.5|2.5",
+            "ranger_unit_id:7.5|3",
+            "red_eyes_unit_id:8.5|0.5",
+            "golden_buckler_unit_id:4.5|13.5",
+            "doomsday_machine_unit_id:8.5|3.5",
+            "red_eyes_unit_id:7.5|0.5",
+            "red_eyes_unit_id:6.5|0.5",
+            "doomsday_machine_unit_id:8.5|2.5",
+            "golden_buckler_unit_id:5.5|13.5",
+            "red_eyes_unit_id:8.5|1.5",
+            "great_boar_unit_id:7.5|1.5",
+            "doomsday_machine_unit_id:5.5|3",
+            "doomsday_machine_unit_id:5.5|2"
+          ]
+        ],
+        "leakValue": 285,
+        "leaksCaughtValue": 394,
+        "leftAtSeconds": -1,
+        "kingUpgradesPerWave": [
+          [
+            "Upgrade King Spell"
+          ],
+          [
+            "Upgrade King Spell"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "opponentKingUpgradesPerWave": [
+          [
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack"
+          ],
+          [],
+          [],
+          [],
+          [
+            "Upgrade King Attack"
+          ],
+          [],
+          [],
+          [],
+          [
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack",
+            "Upgrade King Attack",
+            "Upgrade King Spell",
+            "Upgrade King Spell"
+          ],
+          [
+            "Upgrade King Regen",
+            "Upgrade King Regen",
+            "Upgrade King Regen",
+            "Upgrade King Regen"
+          ],
+          [],
+          [
+            "Upgrade King Spell",
+            "Upgrade King Spell",
+            "Upgrade King Spell",
+            "Upgrade King Spell",
+            "Upgrade King Spell",
+            "Upgrade King Spell",
+            "Upgrade King Spell"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "playerId": "46FF8F06C769E382",
+        "playerName": "Buckelkopf",
+        "playerSlot": 3,
+        "legion": "Mastermind",
+        "workers": 56,
+        "value": 6505,
+        "cross": true,
+        "gameResult": "lost",
+        "overallElo": 800,
+        "fighters": "Starcaller,Sky Queen,Red Eyes,Red Eyes,Dark Mage,Sky Queen,Sky Queen,Red Eyes,Red Eyes,APS,Starcaller,Dark Mage,Kingpin,Dark Mage,Sky Queen,Dark Mage,Dark Mage,Bounty Hunter,Kingpin",
+        "mercenaries": "Snail,Snail,Dragon Turtle,Dragon Turtle,Snail,Fiend,Dragon Turtle,Dino,Fiend,Cannoneer,Mimic,Hermit,Snail,Drake,Lizard,Drake,Snail,Hermit,Hermit,Drake,Dino,Mimic,Cannoneer,Drake,Drake,Drake,Lizard,Kraken,Fiend",
+        "stayedUntilEnd": true,
+        "chosenSpell": "Sorcerer",
+        "partySize": 2,
+        "firstWaveFighters": "Bone Warrior,Dark Mage,Angler,Angler",
+        "rolls": "bone_warrior_unit_id, harpy_unit_id, angler_unit_id, aps_unit_id, disciple_unit_id, great_boar_unit_id",
+        "legionSpecificElo": 771,
+        "partyMembers": [
+          "Buckelkopf",
+          "Shonzito"
+        ],
+        "partyMembersIds": [
+          "46FF8F06C769E382",
+          "FCD8D09F02BC365"
+        ],
+        "mvpScore": 12507,
+        "netWorthPerWave": [
+          432,
+          532,
+          657,
+          798,
+          971,
+          1169,
+          1397,
+          1660,
+          1946,
+          2344,
+          2689,
+          3273,
+          3790,
+          4346,
+          4966,
+          5557,
+          6383,
+          7522,
+          8609,
+          9006
+        ],
+        "workersPerWave": [
+          2,
+          3,
+          3,
+          3,
+          4,
+          5,
+          5,
+          8,
+          8,
+          9,
+          11,
+          13,
+          15,
+          16,
+          16,
+          20,
+          32,
+          56,
+          56,
+          56
+        ],
+        "incomePerWave": [
+          10,
+          16,
+          28,
+          40,
+          46,
+          64,
+          76,
+          100,
+          118,
+          148,
+          148,
+          214,
+          262,
+          304,
+          344,
+          404,
+          474,
+          594,
+          712,
+          712
+        ],
+        "mercenariesSentPerWave": [
+          [],
+          [
+            "Snail"
+          ],
+          [
+            "Snail"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Snail"
+          ],
+          [
+            "Fiend"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Dino"
+          ],
+          [
+            "Fiend"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [],
+          [
+            "Hermit",
+            "Mimic",
+            "Snail"
+          ],
+          [
+            "Drake",
+            "Lizard"
+          ],
+          [
+            "Drake",
+            "Snail"
+          ],
+          [
+            "Hermit",
+            "Hermit"
+          ],
+          [
+            "Drake",
+            "Dino"
+          ],
+          [
+            "Mimic",
+            "Cannoneer"
+          ],
+          [
+            "Drake",
+            "Drake",
+            "Drake",
+            "Lizard"
+          ],
+          [
+            "Kraken",
+            "Fiend"
+          ]
+        ],
+        "mercenariesReceivedPerWave": [
+          [],
+          [],
+          [
+            "Snail"
+          ],
+          [
+            "Snail"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Fiend"
+          ],
+          [
+            "Dino"
+          ],
+          [
+            "Dino"
+          ],
+          [
+            "Hermit"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [
+            "Drake"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [
+            "Drake"
+          ],
+          [
+            "Drake",
+            "Lizard"
+          ],
+          [],
+          [
+            "Kraken",
+            "Pack Leader"
+          ],
+          [
+            "Centaur",
+            "Pack Leader",
+            "Safety Mole",
+            "Hermit",
+            "Hermit",
+            "Dragon Turtle",
+            "Dragon Turtle"
+          ],
+          [
+            "Shaman",
+            "Four Eyes",
+            "Pack Leader",
+            "Safety Mole",
+            "Hermit"
+          ],
+          [
+            "Shaman",
+            "Centaur",
+            "Centaur",
+            "Ogre",
+            "Pack Leader",
+            "Safety Mole",
+            "Hermit"
+          ]
+        ],
+        "leaksPerWave": [
+          [],
+          [],
+          [],
+          [
+            "Flying Chicken",
+            "Flying Chicken",
+            "Flying Chicken",
+            "Flying Chicken"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Hermit"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Cardinal",
+            "Cardinal",
+            "Cardinal",
+            "Cardinal",
+            "Cardinal",
+            "Cardinal",
+            "Cardinal"
+          ],
+          [
+            "Metal Dragon",
+            "Metal Dragon",
+            "Metal Dragon",
+            "Metal Dragon"
+          ],
+          [
+            "Wale Chief",
+            "Wale Chief",
+            "Hermit",
+            "Hermit",
+            "Pack Leader"
+          ],
+          [
+            "Hermit",
+            "Four Eyes",
+            "Shaman"
+          ],
+          [
+            "Maccabeus",
+            "Hermit",
+            "Shaman"
+          ]
+        ],
+        "buildPerWave": [
+          [
+            "angler_unit_id:0.5|6.5",
+            "angler_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "bone_warrior_unit_id:8.5|5.5"
+          ],
+          [
+            "angler_unit_id:0.5|6.5",
+            "angler_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "bone_warrior_unit_id:8.5|5.5",
+            "harpy_unit_id:0.5|0.5"
+          ],
+          [
+            "angler_unit_id:0.5|6.5",
+            "angler_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "bone_warrior_unit_id:8.5|5.5",
+            "harpy_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5"
+          ],
+          [
+            "bounty_hunter_unit_id:0.5|6.5",
+            "angler_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "bone_warrior_unit_id:8.5|5.5",
+            "harpy_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5"
+          ],
+          [
+            "bounty_hunter_unit_id:0.5|6.5",
+            "angler_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "dark_mage_unit_id:8.5|5.5",
+            "harpy_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5",
+            "angler_unit_id:4.5|6.5"
+          ],
+          [
+            "bounty_hunter_unit_id:0.5|6.5",
+            "angler_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "dark_mage_unit_id:8.5|5.5",
+            "harpy_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5",
+            "angler_unit_id:4.5|6.5",
+            "dark_mage_unit_id:1.5|4.5"
+          ],
+          [
+            "bounty_hunter_unit_id:0.5|6.5",
+            "angler_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "dark_mage_unit_id:8.5|5.5",
+            "sky_queen_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5",
+            "angler_unit_id:4.5|6.5",
+            "dark_mage_unit_id:1.5|4.5"
+          ],
+          [
+            "bounty_hunter_unit_id:0.5|6.5",
+            "angler_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "dark_mage_unit_id:8.5|5.5",
+            "sky_queen_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5",
+            "angler_unit_id:4.5|6.5",
+            "dark_mage_unit_id:1.5|4.5",
+            "disciple_unit_id:4.5|5.5"
+          ],
+          [
+            "bounty_hunter_unit_id:0.5|6.5",
+            "angler_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "dark_mage_unit_id:8.5|5.5",
+            "sky_queen_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5",
+            "angler_unit_id:4.5|6.5",
+            "dark_mage_unit_id:1.5|4.5",
+            "disciple_unit_id:4.5|5.5",
+            "aps_unit_id:3.5|5.5"
+          ],
+          [
+            "bounty_hunter_unit_id:0.5|6.5",
+            "angler_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "dark_mage_unit_id:8.5|5.5",
+            "sky_queen_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5",
+            "angler_unit_id:4.5|6.5",
+            "dark_mage_unit_id:1.5|4.5",
+            "disciple_unit_id:4.5|5.5",
+            "aps_unit_id:3.5|5.5",
+            "great_boar_unit_id:7.5|0.5"
+          ],
+          [
+            "bounty_hunter_unit_id:0.5|6.5",
+            "angler_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "dark_mage_unit_id:8.5|5.5",
+            "sky_queen_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5",
+            "angler_unit_id:4.5|6.5",
+            "dark_mage_unit_id:1.5|4.5",
+            "disciple_unit_id:4.5|5.5",
+            "aps_unit_id:3.5|5.5",
+            "great_boar_unit_id:7.5|0.5",
+            "great_boar_unit_id:2.5|0.5"
+          ],
+          [
+            "kingpin_unit_id:0.5|6.5",
+            "angler_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "dark_mage_unit_id:8.5|5.5",
+            "sky_queen_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5",
+            "angler_unit_id:4.5|6.5",
+            "dark_mage_unit_id:1.5|4.5",
+            "disciple_unit_id:4.5|5.5",
+            "aps_unit_id:3.5|5.5",
+            "great_boar_unit_id:7.5|0.5",
+            "great_boar_unit_id:2.5|0.5"
+          ],
+          [
+            "kingpin_unit_id:0.5|6.5",
+            "angler_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "dark_mage_unit_id:8.5|5.5",
+            "sky_queen_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5",
+            "angler_unit_id:4.5|6.5",
+            "dark_mage_unit_id:1.5|4.5",
+            "starcaller_unit_id:4.5|5.5",
+            "aps_unit_id:3.5|5.5",
+            "great_boar_unit_id:7.5|0.5",
+            "great_boar_unit_id:2.5|0.5"
+          ],
+          [
+            "kingpin_unit_id:0.5|6.5",
+            "angler_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "dark_mage_unit_id:8.5|5.5",
+            "sky_queen_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5",
+            "angler_unit_id:4.5|6.5",
+            "dark_mage_unit_id:1.5|4.5",
+            "starcaller_unit_id:4.5|5.5",
+            "aps_unit_id:3.5|5.5",
+            "great_boar_unit_id:7.5|0.5",
+            "red_eyes_unit_id:2.5|0.5",
+            "harpy_unit_id:1.5|0.5",
+            "harpy_unit_id:3.5|0.5"
+          ],
+          [
+            "kingpin_unit_id:0.5|6.5",
+            "angler_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "dark_mage_unit_id:8.5|5.5",
+            "sky_queen_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5",
+            "angler_unit_id:4.5|6.5",
+            "dark_mage_unit_id:1.5|4.5",
+            "starcaller_unit_id:4.5|5.5",
+            "aps_unit_id:3.5|5.5",
+            "red_eyes_unit_id:7.5|0.5",
+            "red_eyes_unit_id:2.5|0.5",
+            "harpy_unit_id:1.5|0.5",
+            "harpy_unit_id:3.5|0.5",
+            "dark_mage_unit_id:8.5|4.5"
+          ],
+          [
+            "kingpin_unit_id:0.5|6.5",
+            "bounty_hunter_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "dark_mage_unit_id:8.5|5.5",
+            "sky_queen_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5",
+            "bounty_hunter_unit_id:4.5|6.5",
+            "dark_mage_unit_id:1.5|4.5",
+            "starcaller_unit_id:4.5|5.5",
+            "aps_unit_id:3.5|5.5",
+            "red_eyes_unit_id:7.5|0.5",
+            "red_eyes_unit_id:2.5|0.5",
+            "sky_queen_unit_id:1.5|0.5",
+            "sky_queen_unit_id:3.5|0.5",
+            "dark_mage_unit_id:8.5|4.5"
+          ],
+          [
+            "kingpin_unit_id:0.5|6.5",
+            "bounty_hunter_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "dark_mage_unit_id:8.5|5.5",
+            "sky_queen_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5",
+            "bounty_hunter_unit_id:4.5|6.5",
+            "dark_mage_unit_id:1.5|4.5",
+            "starcaller_unit_id:4.5|5.5",
+            "aps_unit_id:3.5|5.5",
+            "red_eyes_unit_id:7.5|0.5",
+            "red_eyes_unit_id:2.5|0.5",
+            "sky_queen_unit_id:1.5|0.5",
+            "sky_queen_unit_id:3.5|0.5",
+            "dark_mage_unit_id:8.5|4.5",
+            "great_boar_unit_id:8.5|0.5",
+            "great_boar_unit_id:0.5|1.5",
+            "harpy_unit_id:4.5|0.5"
+          ],
+          [
+            "kingpin_unit_id:0.5|6.5",
+            "bounty_hunter_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "dark_mage_unit_id:8.5|5.5",
+            "sky_queen_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5",
+            "kingpin_unit_id:4.5|6.5",
+            "dark_mage_unit_id:1.5|4.5",
+            "starcaller_unit_id:4.5|5.5",
+            "aps_unit_id:3.5|5.5",
+            "red_eyes_unit_id:7.5|0.5",
+            "red_eyes_unit_id:2.5|0.5",
+            "sky_queen_unit_id:1.5|0.5",
+            "sky_queen_unit_id:3.5|0.5",
+            "dark_mage_unit_id:8.5|4.5",
+            "great_boar_unit_id:8.5|0.5",
+            "great_boar_unit_id:0.5|1.5",
+            "harpy_unit_id:4.5|0.5"
+          ],
+          [
+            "kingpin_unit_id:0.5|6.5",
+            "bounty_hunter_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "dark_mage_unit_id:8.5|5.5",
+            "sky_queen_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5",
+            "kingpin_unit_id:4.5|6.5",
+            "dark_mage_unit_id:1.5|4.5",
+            "starcaller_unit_id:4.5|5.5",
+            "aps_unit_id:3.5|5.5",
+            "red_eyes_unit_id:7.5|0.5",
+            "red_eyes_unit_id:2.5|0.5",
+            "sky_queen_unit_id:1.5|0.5",
+            "sky_queen_unit_id:3.5|0.5",
+            "dark_mage_unit_id:8.5|4.5",
+            "great_boar_unit_id:8.5|0.5",
+            "great_boar_unit_id:0.5|1.5",
+            "sky_queen_unit_id:4.5|0.5",
+            "starcaller_unit_id:6.5|3.5"
+          ],
+          [
+            "kingpin_unit_id:0.5|6.5",
+            "bounty_hunter_unit_id:8.5|6.5",
+            "dark_mage_unit_id:0.5|5.5",
+            "dark_mage_unit_id:8.5|5.5",
+            "sky_queen_unit_id:0.5|0.5",
+            "dark_mage_unit_id:1.5|5.5",
+            "kingpin_unit_id:4.5|6.5",
+            "dark_mage_unit_id:1.5|4.5",
+            "starcaller_unit_id:4.5|5.5",
+            "aps_unit_id:3.5|5.5",
+            "red_eyes_unit_id:7.5|0.5",
+            "red_eyes_unit_id:2.5|0.5",
+            "sky_queen_unit_id:1.5|0.5",
+            "sky_queen_unit_id:3.5|0.5",
+            "dark_mage_unit_id:8.5|4.5",
+            "red_eyes_unit_id:8.5|0.5",
+            "red_eyes_unit_id:0.5|1.5",
+            "sky_queen_unit_id:4.5|0.5",
+            "starcaller_unit_id:6.5|3.5"
+          ]
+        ],
+        "leakValue": 494,
+        "leaksCaughtValue": 241,
+        "leftAtSeconds": -1,
+        "kingUpgradesPerWave": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "opponentKingUpgradesPerWave": [
+          [
+            "Upgrade King Attack"
+          ],
+          [],
+          [],
+          [
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack",
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack",
+            "Upgrade King Attack",
+            "Upgrade King Spell"
+          ],
+          [
+            "Upgrade King Regen",
+            "Upgrade King Regen",
+            "Upgrade King Regen"
+          ],
+          [
+            "Upgrade King Regen",
+            "Upgrade King Regen"
+          ],
+          [
+            "Upgrade King Regen",
+            "Upgrade King Regen"
+          ],
+          [
+            "Upgrade King Regen"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "playerId": "FCD8D09F02BC365",
+        "playerName": "Shonzito",
+        "playerSlot": 4,
+        "legion": "Mastermind",
+        "workers": 25,
+        "value": 6715,
+        "cross": true,
+        "gameResult": "lost",
+        "overallElo": 800,
+        "fighters": "Veteran,Millennium,Fatalizer,Lord Of Death,Disciple,Starcaller,Lord Of Death,Proton,Lord Of Death,Hades,Hades,Hades,Hades,Veteran,Veteran,Atom,Hades,Atom,Berserker,Veteran,Veteran",
+        "mercenaries": "Fiend,Fiend,Imp,Imp,Lizard,Imp,Imp,Brute,Imp,Imp,Snail,Pack Leader,Hermit,Safety Mole,Safety Mole,Fiend,Snail,Safety Mole,Dragon Turtle,Drake,Imp,Imp,Ogre,Brute,Pack Leader,Safety Mole,Hermit,Hermit,Pack Leader,Safety Mole,Hermit,Fiend,Dragon Turtle",
+        "stayedUntilEnd": true,
+        "chosenSpell": "Sorcerer",
+        "partySize": 2,
+        "firstWaveFighters": "Peewee,Veteran",
+        "rolls": "proton_unit_id, peewee_unit_id, ranger_unit_id, berserker_unit_id, disciple_unit_id, lord_of_death_unit_id",
+        "legionSpecificElo": 747,
+        "partyMembers": [
+          "Buckelkopf",
+          "Shonzito"
+        ],
+        "partyMembersIds": [
+          "46FF8F06C769E382",
+          "FCD8D09F02BC365"
+        ],
+        "mvpScore": 11009,
+        "netWorthPerWave": [
+          429,
+          520,
+          637,
+          753,
+          905,
+          1098,
+          1286,
+          1536,
+          1789,
+          2187,
+          2536,
+          2949,
+          3435,
+          3973,
+          4511,
+          5177,
+          5824,
+          6859,
+          7892,
+          8269
+        ],
+        "workersPerWave": [
+          3,
+          3,
+          4,
+          4,
+          6,
+          6,
+          8,
+          9,
+          10,
+          14,
+          14,
+          15,
+          15,
+          15,
+          17,
+          23,
+          23,
+          23,
+          25,
+          25
+        ],
+        "incomePerWave": [
+          7,
+          7,
+          25,
+          25,
+          43,
+          43,
+          68,
+          80,
+          105,
+          120,
+          151,
+          191,
+          211,
+          277,
+          295,
+          362,
+          398,
+          533,
+          675,
+          693
+        ],
+        "mercenariesSentPerWave": [
+          [],
+          [],
+          [
+            "Fiend"
+          ],
+          [],
+          [
+            "Fiend"
+          ],
+          [],
+          [],
+          [
+            "Imp",
+            "Lizard"
+          ],
+          [],
+          [
+            "Imp",
+            "Brute"
+          ],
+          [
+            "Imp",
+            "Snail"
+          ],
+          [],
+          [
+            "Pack Leader",
+            "Hermit"
+          ],
+          [
+            "Safety Mole"
+          ],
+          [
+            "Safety Mole",
+            "Snail",
+            "Fiend"
+          ],
+          [
+            "Safety Mole",
+            "Dragon Turtle"
+          ],
+          [
+            "Imp",
+            "Drake"
+          ],
+          [
+            "Ogre",
+            "Brute"
+          ],
+          [
+            "Safety Mole",
+            "Pack Leader",
+            "Hermit",
+            "Hermit"
+          ],
+          [
+            "Dragon Turtle",
+            "Pack Leader",
+            "Safety Mole",
+            "Hermit",
+            "Fiend"
+          ]
+        ],
+        "mercenariesReceivedPerWave": [
+          [],
+          [],
+          [],
+          [
+            "Brute"
+          ],
+          [],
+          [
+            "Dino"
+          ],
+          [],
+          [
+            "Dino"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Hermit"
+          ],
+          [
+            "Fiend"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [
+            "Pack Leader"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [],
+          [
+            "Pack Leader",
+            "Safety Mole"
+          ],
+          [
+            "Cannoneer",
+            "Cannoneer"
+          ],
+          [
+            "Pack Leader",
+            "Mimic",
+            "Safety Mole"
+          ],
+          [
+            "Four Eyes",
+            "Pack Leader"
+          ],
+          [
+            "Shaman",
+            "Witch",
+            "Pack Leader"
+          ]
+        ],
+        "leaksPerWave": [
+          [],
+          [],
+          [],
+          [
+            "Flying Chicken",
+            "Flying Chicken",
+            "Flying Chicken",
+            "Flying Chicken",
+            "Flying Chicken",
+            "Flying Chicken",
+            "Brute"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Granddaddy",
+            "Hermit"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Cardinal",
+            "Cardinal",
+            "Cardinal",
+            "Cardinal",
+            "Cardinal",
+            "Cardinal",
+            "Cardinal"
+          ],
+          [
+            "Metal Dragon",
+            "Metal Dragon",
+            "Metal Dragon",
+            "Metal Dragon",
+            "Metal Dragon",
+            "Metal Dragon",
+            "Cannoneer",
+            "Cannoneer"
+          ],
+          [
+            "Wale Chief",
+            "Wale Chief",
+            "Wale Chief",
+            "Wale Chief"
+          ],
+          [
+            "Dire Toad",
+            "Dire Toad",
+            "Four Eyes"
+          ],
+          [
+            "Froggo",
+            "Froggo",
+            "Froggo",
+            "Witch",
+            "Shaman"
+          ]
+        ],
+        "buildPerWave": [
+          [
+            "veteran_unit_id:0.5|7.5",
+            "peewee_unit_id:8.5|7.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "peewee_unit_id:8.5|7.5",
+            "peewee_unit_id:1.5|6.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "peewee_unit_id:8.5|7.5",
+            "veteran_unit_id:1.5|6.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "peewee_unit_id:8.5|7.5",
+            "veteran_unit_id:1.5|6.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "veteran_unit_id:1.5|6.5",
+            "berserker_unit_id:8.5|7.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "veteran_unit_id:1.5|6.5",
+            "berserker_unit_id:8.5|7.5",
+            "atom_unit_id:0.5|4.5",
+            "proton_unit_id:1.5|3.5",
+            "proton_unit_id:0.5|3.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "veteran_unit_id:1.5|6.5",
+            "berserker_unit_id:8.5|7.5",
+            "atom_unit_id:0.5|4.5",
+            "proton_unit_id:1.5|3.5",
+            "proton_unit_id:0.5|3.5",
+            "veteran_unit_id:4.5|7.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "veteran_unit_id:1.5|6.5",
+            "berserker_unit_id:8.5|7.5",
+            "atom_unit_id:0.5|4.5",
+            "proton_unit_id:1.5|3.5",
+            "proton_unit_id:0.5|3.5",
+            "veteran_unit_id:4.5|7.5",
+            "veteran_unit_id:3.5|6.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "veteran_unit_id:1.5|6.5",
+            "berserker_unit_id:8.5|7.5",
+            "atom_unit_id:0.5|4.5",
+            "lord_of_death_unit_id:3.5|4.5",
+            "proton_unit_id:0.5|3.5",
+            "veteran_unit_id:4.5|7.5",
+            "veteran_unit_id:3.5|6.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "veteran_unit_id:1.5|6.5",
+            "berserker_unit_id:8.5|7.5",
+            "atom_unit_id:0.5|4.5",
+            "lord_of_death_unit_id:3.5|4.5",
+            "proton_unit_id:0.5|3.5",
+            "veteran_unit_id:4.5|7.5",
+            "veteran_unit_id:3.5|6.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "veteran_unit_id:1.5|6.5",
+            "berserker_unit_id:8.5|7.5",
+            "atom_unit_id:0.5|4.5",
+            "hades_unit_id:3.5|4.5",
+            "proton_unit_id:0.5|3.5",
+            "veteran_unit_id:4.5|7.5",
+            "veteran_unit_id:3.5|6.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "veteran_unit_id:1.5|6.5",
+            "berserker_unit_id:8.5|7.5",
+            "atom_unit_id:0.5|4.5",
+            "hades_unit_id:3.5|4.5",
+            "proton_unit_id:0.5|3.5",
+            "veteran_unit_id:4.5|7.5",
+            "veteran_unit_id:3.5|6.5",
+            "lord_of_death_unit_id:4.5|4.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "veteran_unit_id:1.5|6.5",
+            "berserker_unit_id:8.5|7.5",
+            "atom_unit_id:0.5|4.5",
+            "hades_unit_id:3.5|4.5",
+            "proton_unit_id:0.5|3.5",
+            "veteran_unit_id:4.5|7.5",
+            "veteran_unit_id:3.5|6.5",
+            "hades_unit_id:4.5|4.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "veteran_unit_id:1.5|6.5",
+            "berserker_unit_id:8.5|7.5",
+            "atom_unit_id:0.5|4.5",
+            "hades_unit_id:3.5|4.5",
+            "proton_unit_id:0.5|3.5",
+            "veteran_unit_id:4.5|7.5",
+            "veteran_unit_id:3.5|6.5",
+            "hades_unit_id:4.5|4.5",
+            "lord_of_death_unit_id:5.5|5.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "veteran_unit_id:1.5|6.5",
+            "berserker_unit_id:8.5|7.5",
+            "atom_unit_id:0.5|4.5",
+            "hades_unit_id:3.5|4.5",
+            "proton_unit_id:0.5|3.5",
+            "veteran_unit_id:4.5|7.5",
+            "veteran_unit_id:3.5|6.5",
+            "hades_unit_id:4.5|4.5",
+            "hades_unit_id:5.5|5.5",
+            "lord_of_death_unit_id:5.5|4.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "veteran_unit_id:1.5|6.5",
+            "berserker_unit_id:8.5|7.5",
+            "atom_unit_id:0.5|4.5",
+            "hades_unit_id:3.5|4.5",
+            "proton_unit_id:0.5|3.5",
+            "veteran_unit_id:4.5|7.5",
+            "veteran_unit_id:3.5|6.5",
+            "hades_unit_id:4.5|4.5",
+            "hades_unit_id:5.5|5.5",
+            "hades_unit_id:5.5|4.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "veteran_unit_id:1.5|6.5",
+            "berserker_unit_id:8.5|7.5",
+            "atom_unit_id:0.5|4.5",
+            "hades_unit_id:3.5|4.5",
+            "atom_unit_id:0.5|3.5",
+            "veteran_unit_id:4.5|7.5",
+            "veteran_unit_id:3.5|6.5",
+            "hades_unit_id:4.5|4.5",
+            "hades_unit_id:5.5|5.5",
+            "hades_unit_id:5.5|4.5",
+            "lord_of_death_unit_id:4.5|3.5",
+            "lord_of_death_unit_id:3.5|3.5",
+            "proton_unit_id:1.5|3.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "veteran_unit_id:1.5|6.5",
+            "berserker_unit_id:8.5|7.5",
+            "atom_unit_id:0.5|4.5",
+            "hades_unit_id:3.5|4.5",
+            "atom_unit_id:0.5|3.5",
+            "veteran_unit_id:4.5|7.5",
+            "veteran_unit_id:3.5|6.5",
+            "hades_unit_id:4.5|4.5",
+            "hades_unit_id:5.5|5.5",
+            "hades_unit_id:5.5|4.5",
+            "hades_unit_id:4.5|3.5",
+            "lord_of_death_unit_id:3.5|3.5",
+            "proton_unit_id:1.5|3.5",
+            "lord_of_death_unit_id:5.5|3.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "veteran_unit_id:1.5|6.5",
+            "berserker_unit_id:8.5|7.5",
+            "atom_unit_id:0.5|4.5",
+            "hades_unit_id:3.5|4.5",
+            "atom_unit_id:0.5|3.5",
+            "veteran_unit_id:4.5|7.5",
+            "veteran_unit_id:3.5|6.5",
+            "hades_unit_id:4.5|4.5",
+            "hades_unit_id:5.5|5.5",
+            "hades_unit_id:5.5|4.5",
+            "hades_unit_id:4.5|3.5",
+            "lord_of_death_unit_id:3.5|3.5",
+            "proton_unit_id:1.5|3.5",
+            "lord_of_death_unit_id:5.5|3.5",
+            "starcaller_unit_id:2.5|3.5",
+            "disciple_unit_id:4.5|2.5",
+            "lord_of_death_unit_id:3.5|2.5"
+          ],
+          [
+            "veteran_unit_id:0.5|7.5",
+            "veteran_unit_id:1.5|6.5",
+            "berserker_unit_id:8.5|7.5",
+            "atom_unit_id:0.5|4.5",
+            "hades_unit_id:3.5|4.5",
+            "atom_unit_id:0.5|3.5",
+            "veteran_unit_id:4.5|7.5",
+            "veteran_unit_id:3.5|6.5",
+            "hades_unit_id:4.5|4.5",
+            "hades_unit_id:5.5|5.5",
+            "hades_unit_id:5.5|4.5",
+            "hades_unit_id:4.5|3.5",
+            "lord_of_death_unit_id:3.5|3.5",
+            "proton_unit_id:1.5|3.5",
+            "lord_of_death_unit_id:5.5|3.5",
+            "starcaller_unit_id:2.5|3.5",
+            "disciple_unit_id:4.5|2.5",
+            "lord_of_death_unit_id:3.5|2.5",
+            "fatalizer_unit_id:3.5|7.5",
+            "millennium_unit_id:6.5|4.5",
+            "veteran_unit_id:2.5|4.5"
+          ]
+        ],
+        "leakValue": 439,
+        "leaksCaughtValue": 334,
+        "leftAtSeconds": -1,
+        "kingUpgradesPerWave": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "opponentKingUpgradesPerWave": [
+          [
+            "Upgrade King Spell"
+          ],
+          [
+            "Upgrade King Spell"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Upgrade King Spell",
+            "Upgrade King Spell",
+            "Upgrade King Spell"
+          ],
+          [],
+          [],
+          [
+            "Upgrade King Spell",
+            "Upgrade King Spell"
+          ],
+          [],
+          [],
+          [
+            "Upgrade King Regen",
+            "Upgrade King Regen"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "playerId": "E65652208AF3CA73",
+        "playerName": "alanch88",
+        "playerSlot": 6,
+        "legion": "Mastermind",
+        "workers": 30,
+        "value": 7160,
+        "cross": false,
+        "gameResult": "won",
+        "overallElo": 888,
+        "fighters": "Priestess Of The Abyss,Fenix,Fenix,Fire Elemental,Sacred Steed,Fenix,Fire Elemental,Sacred Steed,Royal Guard,Royal Guard,Royal Guard,Pegasus,Azeria,Pegasus,Azeria,Pegasus,Azeria,Royal Guard,Royal Guard,MPS,Rogue Wave,Deathcap",
+        "mercenaries": "Dragon Turtle,Cannoneer,Dragon Turtle,Brute,Dino,Dragon Turtle,Fiend,Giant Snail,Giant Snail,Giant Snail,Giant Snail,Giant Snail,Cannoneer,Cannoneer,Mimic,Cannoneer,Dino,Cannoneer,Cannoneer,Mimic,Dino,Cannoneer,Dino,Four Eyes,Four Eyes,Cannoneer,Cannoneer,Dino,Dragon Turtle,Giant Snail,Giant Snail,Giant Snail,Giant Snail",
+        "stayedUntilEnd": true,
+        "chosenSpell": "Giant Snail",
+        "partySize": 1,
+        "firstWaveFighters": "Honeyflower",
+        "rolls": "golden_buckler_unit_id, aqua_spirit_unit_id, sacred_steed_unit_id, honeyflower_unit_id, aps_unit_id, priestess_of_the_abyss_unit_id",
+        "legionSpecificElo": 1285,
+        "partyMembers": [
+          "alanch88"
+        ],
+        "partyMembersIds": [
+          "E65652208AF3CA73"
+        ],
+        "mvpScore": 9451,
+        "netWorthPerWave": [
+          425,
+          527,
+          632,
+          758,
+          931,
+          1091,
+          1307,
+          1550,
+          1868,
+          2141,
+          2558,
+          2913,
+          3302,
+          3747,
+          4363,
+          5038,
+          6017,
+          7155,
+          8389,
+          9190
+        ],
+        "workersPerWave": [
+          3,
+          5,
+          5,
+          5,
+          6,
+          6,
+          7,
+          7,
+          8,
+          8,
+          14,
+          16,
+          16,
+          16,
+          16,
+          20,
+          28,
+          28,
+          30,
+          30
+        ],
+        "incomePerWave": [
+          3,
+          15,
+          15,
+          15,
+          57,
+          72,
+          72,
+          108,
+          126,
+          126,
+          186,
+          216,
+          256,
+          310,
+          310,
+          410,
+          488,
+          548,
+          704,
+          728
+        ],
+        "mercenariesSentPerWave": [
+          [],
+          [
+            "Dragon Turtle"
+          ],
+          [],
+          [],
+          [
+            "Cannoneer"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Brute"
+          ],
+          [
+            "Dino"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Fiend"
+          ],
+          [
+            "Giant Snail",
+            "Giant Snail",
+            "Giant Snail",
+            "Giant Snail",
+            "Giant Snail"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [
+            "Mimic",
+            "Cannoneer"
+          ],
+          [
+            "Dino"
+          ],
+          [
+            "Cannoneer",
+            "Cannoneer"
+          ],
+          [
+            "Mimic",
+            "Dino"
+          ],
+          [
+            "Cannoneer",
+            "Dino"
+          ],
+          [
+            "Four Eyes"
+          ],
+          [
+            "Four Eyes",
+            "Cannoneer",
+            "Dino",
+            "Cannoneer",
+            "Dragon Turtle",
+            "Giant Snail",
+            "Giant Snail",
+            "Giant Snail",
+            "Giant Snail"
+          ]
+        ],
+        "mercenariesReceivedPerWave": [
+          [],
+          [],
+          [],
+          [
+            "Brute",
+            "Snail"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Fiend"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [],
+          [
+            "Drake",
+            "Dragon Turtle"
+          ],
+          [
+            "Fiend"
+          ],
+          [
+            "Dino"
+          ],
+          [
+            "Drake",
+            "Dragon Turtle"
+          ],
+          [
+            "Hermit",
+            "Dino"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [
+            "Pack Leader",
+            "Brute"
+          ],
+          [
+            "Drake",
+            "Dino"
+          ],
+          [
+            "Drake",
+            "Cannoneer"
+          ],
+          [
+            "Four Eyes",
+            "Pack Leader",
+            "Safety Mole",
+            "Brute",
+            "Snail"
+          ],
+          [
+            "Drake",
+            "Dino",
+            "Dino"
+          ],
+          [
+            "Drake",
+            "Cannoneer",
+            "Cannoneer"
+          ]
+        ],
+        "leaksPerWave": [
+          [],
+          [],
+          [],
+          [
+            "Flying Chicken",
+            "Flying Chicken",
+            "Flying Chicken",
+            "Flying Chicken",
+            "Flying Chicken",
+            "Flying Chicken",
+            "Brute"
+          ],
+          [
+            "Scorpion",
+            "Scorpion",
+            "Scorpion",
+            "Scorpion",
+            "Dragon Turtle"
+          ],
+          [
+            "Rocko",
+            "Rocko",
+            "Rocko",
+            "Rocko"
+          ],
+          [],
+          [],
+          [],
+          [
+            "Granddaddy"
+          ],
+          [
+            "Quill Shooter",
+            "Quill Shooter",
+            "Quill Shooter"
+          ],
+          [
+            "Mantis",
+            "Mantis",
+            "Mantis",
+            "Mantis",
+            "Mantis",
+            "Drake"
+          ],
+          [
+            "Drill Golem",
+            "Drill Golem",
+            "Drill Golem",
+            "Hermit"
+          ],
+          [
+            "Killer Slug",
+            "Killer Slug",
+            "Killer Slug",
+            "Killer Slug",
+            "Killer Slug",
+            "Killer Slug",
+            "Cannoneer"
+          ],
+          [
+            "Giant Quadrapus"
+          ],
+          [
+            "Cardinal",
+            "Cardinal",
+            "Cardinal",
+            "Cardinal",
+            "Cardinal",
+            "Cardinal",
+            "Cardinal",
+            "Drake"
+          ],
+          [
+            "Metal Dragon",
+            "Metal Dragon",
+            "Metal Dragon",
+            "Metal Dragon",
+            "Metal Dragon",
+            "Metal Dragon",
+            "Cannoneer",
+            "Drake"
+          ],
+          [
+            "Wale Chief",
+            "Wale Chief",
+            "Wale Chief",
+            "Four Eyes"
+          ],
+          [
+            "Dire Toad",
+            "Dire Toad",
+            "Dire Toad"
+          ],
+          []
+        ],
+        "buildPerWave": [
+          [
+            "honeyflower_unit_id:4.5|7.5"
+          ],
+          [
+            "honeyflower_unit_id:4.5|7.5",
+            "aqua_spirit_unit_id:4.5|3.5"
+          ],
+          [
+            "honeyflower_unit_id:4.5|7.5",
+            "aqua_spirit_unit_id:4.5|3.5"
+          ],
+          [
+            "honeyflower_unit_id:4.5|7.5",
+            "rogue_wave_unit_id:4.5|3.5"
+          ],
+          [
+            "honeyflower_unit_id:4.5|7.5",
+            "rogue_wave_unit_id:4.5|3.5",
+            "aps_unit_id:5|2.5"
+          ],
+          [
+            "honeyflower_unit_id:4.5|7.5",
+            "rogue_wave_unit_id:4.5|3.5",
+            "aps_unit_id:5|2.5",
+            "golden_buckler_unit_id:4.5|8.5",
+            "golden_buckler_unit_id:3.5|8.5"
+          ],
+          [
+            "honeyflower_unit_id:4.5|7.5",
+            "rogue_wave_unit_id:4.5|3.5",
+            "aps_unit_id:5|2.5",
+            "golden_buckler_unit_id:4.5|8.5",
+            "golden_buckler_unit_id:3.5|8.5",
+            "priestess_of_the_abyss_unit_id:4|2.5"
+          ],
+          [
+            "honeyflower_unit_id:4.5|7.5",
+            "rogue_wave_unit_id:4.5|3.5",
+            "aps_unit_id:5|2.5",
+            "royal_guard_unit_id:4.5|8.5",
+            "golden_buckler_unit_id:3.5|8.5",
+            "priestess_of_the_abyss_unit_id:4|2.5"
+          ],
+          [
+            "honeyflower_unit_id:4.5|7.5",
+            "rogue_wave_unit_id:4.5|3.5",
+            "aps_unit_id:5|2.5",
+            "royal_guard_unit_id:4.5|8.5",
+            "golden_buckler_unit_id:3.5|8.5",
+            "priestess_of_the_abyss_unit_id:4|2.5",
+            "sacred_steed_unit_id:3|2.5",
+            "priestess_of_the_abyss_unit_id:4.5|1.5"
+          ],
+          [
+            "honeyflower_unit_id:4.5|7.5",
+            "rogue_wave_unit_id:4.5|3.5",
+            "aps_unit_id:5|2.5",
+            "royal_guard_unit_id:4.5|8.5",
+            "golden_buckler_unit_id:3.5|8.5",
+            "priestess_of_the_abyss_unit_id:4|2.5",
+            "sacred_steed_unit_id:3|2.5",
+            "priestess_of_the_abyss_unit_id:4.5|1.5",
+            "sacred_steed_unit_id:3.5|1.5"
+          ],
+          [
+            "honeyflower_unit_id:4.5|7.5",
+            "rogue_wave_unit_id:4.5|3.5",
+            "aps_unit_id:5|2.5",
+            "royal_guard_unit_id:4.5|8.5",
+            "royal_guard_unit_id:3.5|8.5",
+            "priestess_of_the_abyss_unit_id:4|2.5",
+            "sacred_steed_unit_id:3|2.5",
+            "priestess_of_the_abyss_unit_id:4.5|1.5",
+            "sacred_steed_unit_id:3.5|1.5"
+          ],
+          [
+            "honeyflower_unit_id:4.5|7.5",
+            "rogue_wave_unit_id:4.5|3.5",
+            "aps_unit_id:5|2.5",
+            "royal_guard_unit_id:4.5|8.5",
+            "royal_guard_unit_id:3.5|8.5",
+            "priestess_of_the_abyss_unit_id:4|2.5",
+            "sacred_steed_unit_id:3|2.5",
+            "priestess_of_the_abyss_unit_id:4.5|1.5",
+            "sacred_steed_unit_id:3.5|1.5",
+            "priestess_of_the_abyss_unit_id:5.5|1.5",
+            "sacred_steed_unit_id:4|0.5"
+          ],
+          [
+            "honeyflower_unit_id:4.5|7.5",
+            "rogue_wave_unit_id:4.5|3.5",
+            "aps_unit_id:5|2.5",
+            "royal_guard_unit_id:4.5|8.5",
+            "royal_guard_unit_id:3.5|8.5",
+            "priestess_of_the_abyss_unit_id:4|2.5",
+            "sacred_steed_unit_id:3|2.5",
+            "priestess_of_the_abyss_unit_id:4.5|1.5",
+            "sacred_steed_unit_id:3.5|1.5",
+            "priestess_of_the_abyss_unit_id:5.5|1.5",
+            "sacred_steed_unit_id:4|0.5",
+            "royal_guard_unit_id:5.5|8.5",
+            "royal_guard_unit_id:3.5|7.5",
+            "golden_buckler_unit_id:5.5|7.5"
+          ],
+          [
+            "deathcap_unit_id:4.5|7.5",
+            "rogue_wave_unit_id:4.5|3.5",
+            "aps_unit_id:5|2.5",
+            "royal_guard_unit_id:4.5|8.5",
+            "royal_guard_unit_id:3.5|8.5",
+            "priestess_of_the_abyss_unit_id:4|2.5",
+            "sacred_steed_unit_id:3|2.5",
+            "priestess_of_the_abyss_unit_id:4.5|1.5",
+            "sacred_steed_unit_id:3.5|1.5",
+            "priestess_of_the_abyss_unit_id:5.5|1.5",
+            "sacred_steed_unit_id:4|0.5",
+            "royal_guard_unit_id:5.5|8.5",
+            "royal_guard_unit_id:3.5|7.5",
+            "golden_buckler_unit_id:5.5|7.5",
+            "sacred_steed_unit_id:5|0.5",
+            "aqua_spirit_unit_id:6|2.5"
+          ],
+          [
+            "deathcap_unit_id:4.5|7.5",
+            "rogue_wave_unit_id:4.5|3.5",
+            "aps_unit_id:5|2.5",
+            "royal_guard_unit_id:4.5|8.5",
+            "royal_guard_unit_id:3.5|8.5",
+            "priestess_of_the_abyss_unit_id:4|2.5",
+            "sacred_steed_unit_id:3|2.5",
+            "priestess_of_the_abyss_unit_id:4.5|1.5",
+            "sacred_steed_unit_id:3.5|1.5",
+            "priestess_of_the_abyss_unit_id:5.5|1.5",
+            "sacred_steed_unit_id:4|0.5",
+            "royal_guard_unit_id:5.5|8.5",
+            "royal_guard_unit_id:3.5|7.5",
+            "golden_buckler_unit_id:5.5|7.5",
+            "sacred_steed_unit_id:5|0.5",
+            "aqua_spirit_unit_id:6|2.5",
+            "fire_lord_unit_id:4.5|5",
+            "sacred_steed_unit_id:6|0.5"
+          ],
+          [
+            "deathcap_unit_id:4.5|7.5",
+            "rogue_wave_unit_id:4.5|3.5",
+            "aps_unit_id:5|2.5",
+            "royal_guard_unit_id:4.5|8.5",
+            "royal_guard_unit_id:3.5|8.5",
+            "priestess_of_the_abyss_unit_id:4|2.5",
+            "sacred_steed_unit_id:3|2.5",
+            "priestess_of_the_abyss_unit_id:4.5|1.5",
+            "sacred_steed_unit_id:3.5|1.5",
+            "priestess_of_the_abyss_unit_id:5.5|1.5",
+            "sacred_steed_unit_id:4|0.5",
+            "royal_guard_unit_id:5.5|8.5",
+            "royal_guard_unit_id:3.5|7.5",
+            "royal_guard_unit_id:5.5|7.5",
+            "sacred_steed_unit_id:5|0.5",
+            "aqua_spirit_unit_id:6|2.5",
+            "fenix_unit_id:4.5|5",
+            "sacred_steed_unit_id:6|0.5",
+            "aqua_spirit_unit_id:5.5|3.5"
+          ],
+          [
+            "deathcap_unit_id:4.5|7.5",
+            "rogue_wave_unit_id:4.5|3.5",
+            "mps_unit_id:5|2.5",
+            "royal_guard_unit_id:4.5|8.5",
+            "royal_guard_unit_id:3.5|8.5",
+            "azeria_unit_id:4|2.5",
+            "sacred_steed_unit_id:3|2.5",
+            "priestess_of_the_abyss_unit_id:4.5|1.5",
+            "sacred_steed_unit_id:3.5|1.5",
+            "priestess_of_the_abyss_unit_id:5.5|1.5",
+            "sacred_steed_unit_id:4|0.5",
+            "royal_guard_unit_id:5.5|8.5",
+            "royal_guard_unit_id:3.5|7.5",
+            "royal_guard_unit_id:5.5|7.5",
+            "sacred_steed_unit_id:5|0.5",
+            "aqua_spirit_unit_id:6|2.5",
+            "fenix_unit_id:4.5|5",
+            "sacred_steed_unit_id:6|0.5",
+            "aqua_spirit_unit_id:5.5|3.5"
+          ],
+          [
+            "deathcap_unit_id:4.5|7.5",
+            "rogue_wave_unit_id:4.5|3.5",
+            "mps_unit_id:5|2.5",
+            "royal_guard_unit_id:4.5|8.5",
+            "royal_guard_unit_id:3.5|8.5",
+            "azeria_unit_id:4|2.5",
+            "sacred_steed_unit_id:3|2.5",
+            "priestess_of_the_abyss_unit_id:4.5|1.5",
+            "sacred_steed_unit_id:3.5|1.5",
+            "priestess_of_the_abyss_unit_id:5.5|1.5",
+            "sacred_steed_unit_id:4|0.5",
+            "royal_guard_unit_id:5.5|8.5",
+            "royal_guard_unit_id:3.5|7.5",
+            "royal_guard_unit_id:5.5|7.5",
+            "sacred_steed_unit_id:5|0.5",
+            "aqua_spirit_unit_id:6|2.5",
+            "fenix_unit_id:4.5|5",
+            "sacred_steed_unit_id:6|0.5",
+            "aqua_spirit_unit_id:5.5|3.5",
+            "fenix_unit_id:5.5|5"
+          ],
+          [
+            "deathcap_unit_id:4.5|7.5",
+            "rogue_wave_unit_id:4.5|3.5",
+            "mps_unit_id:5|2.5",
+            "royal_guard_unit_id:4.5|8.5",
+            "royal_guard_unit_id:3.5|8.5",
+            "azeria_unit_id:4|2.5",
+            "pegasus_unit_id:3|2.5",
+            "azeria_unit_id:4.5|1.5",
+            "pegasus_unit_id:3.5|1.5",
+            "azeria_unit_id:5.5|1.5",
+            "pegasus_unit_id:4|0.5",
+            "royal_guard_unit_id:5.5|8.5",
+            "royal_guard_unit_id:3.5|7.5",
+            "royal_guard_unit_id:5.5|7.5",
+            "sacred_steed_unit_id:5|0.5",
+            "aqua_spirit_unit_id:6|2.5",
+            "fenix_unit_id:4.5|5",
+            "sacred_steed_unit_id:6|0.5",
+            "aqua_spirit_unit_id:5.5|3.5",
+            "fenix_unit_id:5.5|5"
+          ],
+          [
+            "deathcap_unit_id:4.5|7.5",
+            "rogue_wave_unit_id:4.5|3.5",
+            "mps_unit_id:5|2.5",
+            "royal_guard_unit_id:4.5|8.5",
+            "royal_guard_unit_id:3.5|8.5",
+            "azeria_unit_id:4|2.5",
+            "pegasus_unit_id:3|2.5",
+            "azeria_unit_id:4.5|1.5",
+            "pegasus_unit_id:3.5|1.5",
+            "azeria_unit_id:5.5|1.5",
+            "pegasus_unit_id:4|0.5",
+            "royal_guard_unit_id:5.5|8.5",
+            "royal_guard_unit_id:3.5|7.5",
+            "royal_guard_unit_id:5.5|7.5",
+            "sacred_steed_unit_id:5|0.5",
+            "fire_elemental_unit_id:6|2.5",
+            "fenix_unit_id:4.5|5",
+            "sacred_steed_unit_id:6|0.5",
+            "fire_elemental_unit_id:5.5|3.5",
+            "fenix_unit_id:5.5|5",
+            "fenix_unit_id:3.5|5.5",
+            "priestess_of_the_abyss_unit_id:6.5|1.5"
+          ]
+        ],
+        "leakValue": 855,
+        "leaksCaughtValue": 33,
+        "leftAtSeconds": -1,
+        "kingUpgradesPerWave": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "opponentKingUpgradesPerWave": [
+          [
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack"
+          ],
+          [],
+          [],
+          [],
+          [
+            "Upgrade King Regen"
+          ],
+          [
+            "Upgrade King Regen"
+          ],
+          [],
+          [],
+          [
+            "Upgrade King Attack",
+            "Upgrade King Attack"
+          ],
+          [],
+          [
+            "Upgrade King Regen",
+            "Upgrade King Spell",
+            "Upgrade King Regen"
+          ],
+          [],
+          [],
+          [],
+          [
+            "Upgrade King Regen",
+            "Upgrade King Regen"
+          ],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "playerId": "3C325410834DE04D",
+        "playerName": "Tashy",
+        "playerSlot": 7,
+        "legion": "Mastermind",
+        "workers": 50,
+        "value": 6970,
+        "cross": false,
+        "gameResult": "won",
+        "overallElo": 1409,
+        "fighters": "APS,Great Boar,Red Eyes,Berserker,Hades,Fatalizer,Hades,Canopie,Red Eyes,Red Eyes,Ranger,Daphne,Fatalizer,Honeyflower,Daphne,Daphne,Canopie,Daphne,Deathcap",
+        "mercenaries": "Brute,Dino,Dino,Dragon Turtle,Hermit,Fiend,Cannoneer,Pack Leader,Cannoneer,Pack Leader,Safety Mole,Cannoneer,Cannoneer,Pack Leader,Mimic,Safety Mole,Four Eyes,Pack Leader,Shaman,Witch,Pack Leader",
+        "stayedUntilEnd": true,
+        "chosenSpell": "Hero",
+        "partySize": 1,
+        "firstWaveFighters": "Honeyflower",
+        "rolls": "ranger_unit_id, wileshroom_unit_id, honeyflower_unit_id, berserker_unit_id, lord_of_death_unit_id, great_boar_unit_id",
+        "legionSpecificElo": 1053,
+        "partyMembers": [
+          "Tashy"
+        ],
+        "partyMembersIds": [
+          "3C325410834DE04D"
+        ],
+        "mvpScore": 14535,
+        "netWorthPerWave": [
+          433,
+          540,
+          655,
+          832,
+          1015,
+          1191,
+          1409,
+          1665,
+          1963,
+          2323,
+          2739,
+          3101,
+          3544,
+          4058,
+          4695,
+          5404,
+          6321,
+          7476,
+          8702,
+          9328
+        ],
+        "workersPerWave": [
+          3,
+          4,
+          4,
+          4,
+          5,
+          7,
+          8,
+          8,
+          10,
+          10,
+          14,
+          15,
+          15,
+          16,
+          16,
+          20,
+          32,
+          40,
+          50,
+          50
+        ],
+        "incomePerWave": [
+          11,
+          17,
+          17,
+          32,
+          56,
+          56,
+          74,
+          110,
+          130,
+          160,
+          190,
+          190,
+          272,
+          272,
+          342,
+          402,
+          472,
+          572,
+          692,
+          782
+        ],
+        "mercenariesSentPerWave": [
+          [],
+          [],
+          [],
+          [
+            "Brute"
+          ],
+          [],
+          [
+            "Dino"
+          ],
+          [],
+          [
+            "Dino"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Hermit"
+          ],
+          [
+            "Fiend"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [
+            "Pack Leader"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [],
+          [
+            "Pack Leader",
+            "Safety Mole"
+          ],
+          [
+            "Cannoneer",
+            "Cannoneer"
+          ],
+          [
+            "Pack Leader",
+            "Safety Mole",
+            "Mimic"
+          ],
+          [
+            "Four Eyes",
+            "Pack Leader"
+          ],
+          [
+            "Shaman",
+            "Pack Leader",
+            "Witch"
+          ]
+        ],
+        "mercenariesReceivedPerWave": [
+          [],
+          [
+            "Snail"
+          ],
+          [
+            "Snail"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Snail"
+          ],
+          [
+            "Fiend"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Dino"
+          ],
+          [
+            "Fiend"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [],
+          [
+            "Mimic",
+            "Hermit",
+            "Snail"
+          ],
+          [
+            "Drake",
+            "Lizard"
+          ],
+          [
+            "Drake",
+            "Snail"
+          ],
+          [
+            "Hermit",
+            "Hermit"
+          ],
+          [
+            "Drake",
+            "Dino"
+          ],
+          [
+            "Mimic",
+            "Cannoneer"
+          ],
+          [
+            "Drake",
+            "Drake",
+            "Drake",
+            "Lizard"
+          ],
+          [
+            "Kraken",
+            "Fiend"
+          ]
+        ],
+        "leaksPerWave": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Drill Golem",
+            "Hermit",
+            "Mimic"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "buildPerWave": [
+          [
+            "honeyflower_unit_id:4|7.5"
+          ],
+          [
+            "honeyflower_unit_id:4|7.5",
+            "ranger_unit_id:1|3.5"
+          ],
+          [
+            "honeyflower_unit_id:4|7.5",
+            "ranger_unit_id:1|3.5",
+            "wileshroom_unit_id:5|7.5"
+          ],
+          [
+            "honeyflower_unit_id:4|7.5",
+            "ranger_unit_id:1|3.5",
+            "wileshroom_unit_id:5|7.5",
+            "ranger_unit_id:2|3.5",
+            "ranger_unit_id:2.5|2.5"
+          ],
+          [
+            "honeyflower_unit_id:4|7.5",
+            "ranger_unit_id:1|3.5",
+            "wileshroom_unit_id:5|7.5",
+            "ranger_unit_id:2|3.5",
+            "ranger_unit_id:2.5|2.5",
+            "honeyflower_unit_id:5.5|6.5"
+          ],
+          [
+            "honeyflower_unit_id:4|7.5",
+            "ranger_unit_id:1|3.5",
+            "wileshroom_unit_id:5|7.5",
+            "ranger_unit_id:2|3.5",
+            "ranger_unit_id:2.5|2.5",
+            "honeyflower_unit_id:5.5|6.5",
+            "berserker_unit_id:4.5|6.5"
+          ],
+          [
+            "honeyflower_unit_id:4|7.5",
+            "ranger_unit_id:1|3.5",
+            "wileshroom_unit_id:5|7.5",
+            "ranger_unit_id:2|3.5",
+            "ranger_unit_id:2.5|2.5",
+            "honeyflower_unit_id:5.5|6.5",
+            "berserker_unit_id:4.5|6.5",
+            "ranger_unit_id:0.5|2.5"
+          ],
+          [
+            "honeyflower_unit_id:4|7.5",
+            "ranger_unit_id:1|3.5",
+            "canopie_unit_id:5|7.5",
+            "ranger_unit_id:2|3.5",
+            "ranger_unit_id:2.5|2.5",
+            "honeyflower_unit_id:5.5|6.5",
+            "berserker_unit_id:4.5|6.5",
+            "ranger_unit_id:0.5|2.5"
+          ],
+          [
+            "deathcap_unit_id:4|7.5",
+            "ranger_unit_id:1|3.5",
+            "canopie_unit_id:5|7.5",
+            "ranger_unit_id:2|3.5",
+            "ranger_unit_id:2.5|2.5",
+            "honeyflower_unit_id:5.5|6.5",
+            "berserker_unit_id:4.5|6.5",
+            "ranger_unit_id:0.5|2.5"
+          ],
+          [
+            "deathcap_unit_id:4|7.5",
+            "ranger_unit_id:1|3.5",
+            "canopie_unit_id:5|7.5",
+            "ranger_unit_id:2|3.5",
+            "ranger_unit_id:2.5|2.5",
+            "honeyflower_unit_id:5.5|6.5",
+            "berserker_unit_id:4.5|6.5",
+            "daphne_unit_id:0.5|2.5",
+            "ranger_unit_id:2|1.5"
+          ],
+          [
+            "deathcap_unit_id:4|7.5",
+            "ranger_unit_id:1|3.5",
+            "canopie_unit_id:5|7.5",
+            "ranger_unit_id:2|3.5",
+            "ranger_unit_id:2.5|2.5",
+            "honeyflower_unit_id:5.5|6.5",
+            "berserker_unit_id:4.5|6.5",
+            "daphne_unit_id:0.5|2.5",
+            "ranger_unit_id:2|1.5",
+            "great_boar_unit_id:8|0.5"
+          ],
+          [
+            "deathcap_unit_id:4|7.5",
+            "ranger_unit_id:1|3.5",
+            "canopie_unit_id:5|7.5",
+            "ranger_unit_id:2|3.5",
+            "ranger_unit_id:2.5|2.5",
+            "honeyflower_unit_id:5.5|6.5",
+            "berserker_unit_id:4.5|6.5",
+            "daphne_unit_id:0.5|2.5",
+            "ranger_unit_id:2|1.5",
+            "great_boar_unit_id:8|0.5",
+            "great_boar_unit_id:7|0.5"
+          ],
+          [
+            "deathcap_unit_id:4|7.5",
+            "ranger_unit_id:1|3.5",
+            "canopie_unit_id:5|7.5",
+            "ranger_unit_id:2|3.5",
+            "ranger_unit_id:2.5|2.5",
+            "honeyflower_unit_id:5.5|6.5",
+            "fatalizer_unit_id:4.5|6.5",
+            "daphne_unit_id:0.5|2.5",
+            "ranger_unit_id:2|1.5",
+            "great_boar_unit_id:8|0.5",
+            "great_boar_unit_id:7|0.5"
+          ],
+          [
+            "deathcap_unit_id:4|7.5",
+            "daphne_unit_id:1|3.5",
+            "canopie_unit_id:5|7.5",
+            "ranger_unit_id:2|3.5",
+            "ranger_unit_id:2.5|2.5",
+            "honeyflower_unit_id:5.5|6.5",
+            "fatalizer_unit_id:4.5|6.5",
+            "daphne_unit_id:0.5|2.5",
+            "ranger_unit_id:2|1.5",
+            "great_boar_unit_id:8|0.5",
+            "great_boar_unit_id:7|0.5",
+            "canopie_unit_id:3.5|6.5"
+          ],
+          [
+            "deathcap_unit_id:4|7.5",
+            "daphne_unit_id:1|3.5",
+            "canopie_unit_id:5|7.5",
+            "daphne_unit_id:2|3.5",
+            "daphne_unit_id:2.5|2.5",
+            "honeyflower_unit_id:5.5|6.5",
+            "fatalizer_unit_id:4.5|6.5",
+            "daphne_unit_id:0.5|2.5",
+            "ranger_unit_id:2|1.5",
+            "great_boar_unit_id:8|0.5",
+            "great_boar_unit_id:7|0.5",
+            "canopie_unit_id:3.5|6.5",
+            "lord_of_death_unit_id:7.5|3.5"
+          ],
+          [
+            "deathcap_unit_id:4|7.5",
+            "daphne_unit_id:1|3.5",
+            "canopie_unit_id:5|7.5",
+            "daphne_unit_id:2|3.5",
+            "daphne_unit_id:2.5|2.5",
+            "honeyflower_unit_id:5.5|6.5",
+            "fatalizer_unit_id:4.5|6.5",
+            "daphne_unit_id:0.5|2.5",
+            "ranger_unit_id:2|1.5",
+            "great_boar_unit_id:8|0.5",
+            "great_boar_unit_id:7|0.5",
+            "canopie_unit_id:3.5|6.5",
+            "lord_of_death_unit_id:7.5|3.5",
+            "fatalizer_unit_id:4|5.5"
+          ],
+          [
+            "deathcap_unit_id:4|7.5",
+            "daphne_unit_id:1|3.5",
+            "canopie_unit_id:5|7.5",
+            "daphne_unit_id:2|3.5",
+            "daphne_unit_id:2.5|2.5",
+            "honeyflower_unit_id:5.5|6.5",
+            "fatalizer_unit_id:4.5|6.5",
+            "daphne_unit_id:0.5|2.5",
+            "ranger_unit_id:2|1.5",
+            "great_boar_unit_id:8|0.5",
+            "red_eyes_unit_id:7|0.5",
+            "canopie_unit_id:3.5|6.5",
+            "lord_of_death_unit_id:7.5|3.5",
+            "fatalizer_unit_id:4|5.5",
+            "lord_of_death_unit_id:6.5|3.5"
+          ],
+          [
+            "deathcap_unit_id:4|7.5",
+            "daphne_unit_id:1|3.5",
+            "canopie_unit_id:5|7.5",
+            "daphne_unit_id:2|3.5",
+            "daphne_unit_id:2.5|2.5",
+            "honeyflower_unit_id:5.5|6.5",
+            "fatalizer_unit_id:4.5|6.5",
+            "daphne_unit_id:0.5|2.5",
+            "ranger_unit_id:2|1.5",
+            "great_boar_unit_id:8|0.5",
+            "red_eyes_unit_id:7|0.5",
+            "canopie_unit_id:3.5|6.5",
+            "lord_of_death_unit_id:7.5|3.5",
+            "fatalizer_unit_id:4|5.5",
+            "hades_unit_id:6.5|3.5",
+            "berserker_unit_id:5|5.5"
+          ],
+          [
+            "deathcap_unit_id:4|7.5",
+            "daphne_unit_id:1|3.5",
+            "canopie_unit_id:5|7.5",
+            "daphne_unit_id:2|3.5",
+            "daphne_unit_id:2.5|2.5",
+            "honeyflower_unit_id:5.5|6.5",
+            "fatalizer_unit_id:4.5|6.5",
+            "daphne_unit_id:0.5|2.5",
+            "ranger_unit_id:2|1.5",
+            "great_boar_unit_id:8|0.5",
+            "red_eyes_unit_id:7|0.5",
+            "canopie_unit_id:3.5|6.5",
+            "lord_of_death_unit_id:7.5|3.5",
+            "fatalizer_unit_id:4|5.5",
+            "hades_unit_id:6.5|3.5",
+            "berserker_unit_id:5|5.5",
+            "red_eyes_unit_id:1|1.5",
+            "great_boar_unit_id:1.5|0.5"
+          ],
+          [
+            "deathcap_unit_id:4|7.5",
+            "daphne_unit_id:1|3.5",
+            "canopie_unit_id:5|7.5",
+            "daphne_unit_id:2|3.5",
+            "daphne_unit_id:2.5|2.5",
+            "honeyflower_unit_id:5.5|6.5",
+            "fatalizer_unit_id:4.5|6.5",
+            "daphne_unit_id:0.5|2.5",
+            "ranger_unit_id:2|1.5",
+            "red_eyes_unit_id:8|0.5",
+            "red_eyes_unit_id:7|0.5",
+            "canopie_unit_id:3.5|6.5",
+            "hades_unit_id:7.5|3.5",
+            "fatalizer_unit_id:4|5.5",
+            "hades_unit_id:6.5|3.5",
+            "berserker_unit_id:5|5.5",
+            "red_eyes_unit_id:1|1.5",
+            "great_boar_unit_id:1.5|0.5",
+            "aps_unit_id:1.5|2.5"
+          ]
+        ],
+        "leakValue": 75,
+        "leaksCaughtValue": 596,
+        "leftAtSeconds": -1,
+        "kingUpgradesPerWave": [
+          [
+            "Upgrade King Spell"
+          ],
+          [
+            "Upgrade King Spell"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Upgrade King Spell",
+            "Upgrade King Spell",
+            "Upgrade King Spell"
+          ],
+          [],
+          [],
+          [
+            "Upgrade King Spell",
+            "Upgrade King Spell"
+          ],
+          [],
+          [],
+          [
+            "Upgrade King Regen",
+            "Upgrade King Regen"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "opponentKingUpgradesPerWave": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "playerId": "B2892D10EA491C03",
+        "playerName": "MasterGrimm",
+        "playerSlot": 8,
+        "legion": "Atlantean",
+        "workers": 108,
+        "value": 7295,
+        "cross": false,
+        "gameResult": "won",
+        "overallElo": 800,
+        "fighters": "Desert Pilgrim,Azeria,Azeria,King Claw,Whitemane,Deepcoiler,Deepcoiler,Whitemane,Deepcoiler,Deepcoiler,Whitemane,Deepcoiler,Deepcoiler,King Claw,Azeria,Deepcoiler,Ocean Templar,Deepcoiler,Seraphin,Hydra",
+        "mercenaries": "Snail,Snail,Dragon Turtle,Dragon Turtle,Fiend,Dino,Dino,Hermit,Cannoneer,Drake,Cannoneer,Drake,Drake,Lizard,Kraken,Pack Leader,Centaur,Pack Leader,Safety Mole,Hermit,Hermit,Dragon Turtle,Dragon Turtle,Shaman,Four Eyes,Pack Leader,Safety Mole,Hermit,Shaman,Centaur,Centaur,Ogre,Pack Leader,Safety Mole,Hermit",
+        "stayedUntilEnd": true,
+        "chosenSpell": "Sorcerer",
+        "partySize": 1,
+        "firstWaveFighters": "Grarl",
+        "rolls": "pollywog_unit_id, angler_unit_id, sea_serpent_unit_id, grarl_unit_id, priestess_of_the_abyss_unit_id, eggsack_unit_id",
+        "legionSpecificElo": 800,
+        "partyMembers": [
+          "MasterGrimm"
+        ],
+        "partyMembersIds": [
+          "B2892D10EA491C03"
+        ],
+        "mvpScore": 14791,
+        "netWorthPerWave": [
+          431,
+          515,
+          638,
+          871,
+          1059,
+          1256,
+          1493,
+          1748,
+          2065,
+          2438,
+          2942,
+          3431,
+          4050,
+          4697,
+          5430,
+          6182,
+          7318,
+          8791,
+          10546,
+          11174
+        ],
+        "workersPerWave": [
+          1,
+          3,
+          5,
+          6,
+          9,
+          9,
+          11,
+          13,
+          14,
+          15,
+          16,
+          16,
+          17,
+          18,
+          20,
+          44,
+          62,
+          82,
+          106,
+          108
+        ],
+        "incomePerWave": [
+          9,
+          15,
+          21,
+          39,
+          57,
+          81,
+          111,
+          141,
+          173,
+          221,
+          275,
+          317,
+          365,
+          419,
+          419,
+          519,
+          689,
+          903,
+          1233,
+          1353
+        ],
+        "mercenariesSentPerWave": [
+          [],
+          [],
+          [
+            "Snail"
+          ],
+          [
+            "Snail"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Dragon Turtle"
+          ],
+          [
+            "Fiend"
+          ],
+          [
+            "Dino"
+          ],
+          [
+            "Dino"
+          ],
+          [
+            "Hermit"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [
+            "Drake"
+          ],
+          [
+            "Cannoneer"
+          ],
+          [
+            "Drake"
+          ],
+          [
+            "Drake",
+            "Lizard"
+          ],
+          [],
+          [
+            "Kraken",
+            "Pack Leader"
+          ],
+          [
+            "Hermit",
+            "Centaur",
+            "Pack Leader",
+            "Safety Mole",
+            "Hermit",
+            "Dragon Turtle",
+            "Dragon Turtle"
+          ],
+          [
+            "Shaman",
+            "Pack Leader",
+            "Hermit",
+            "Safety Mole",
+            "Four Eyes"
+          ],
+          [
+            "Shaman",
+            "Centaur",
+            "Pack Leader",
+            "Hermit",
+            "Safety Mole",
+            "Centaur",
+            "Ogre"
+          ]
+        ],
+        "mercenariesReceivedPerWave": [
+          [],
+          [],
+          [
+            "Fiend"
+          ],
+          [],
+          [
+            "Fiend"
+          ],
+          [],
+          [],
+          [
+            "Imp",
+            "Lizard"
+          ],
+          [],
+          [
+            "Imp",
+            "Brute"
+          ],
+          [
+            "Imp",
+            "Snail"
+          ],
+          [],
+          [
+            "Pack Leader",
+            "Hermit"
+          ],
+          [
+            "Safety Mole"
+          ],
+          [
+            "Safety Mole",
+            "Fiend",
+            "Snail"
+          ],
+          [
+            "Safety Mole",
+            "Dragon Turtle"
+          ],
+          [
+            "Drake",
+            "Imp"
+          ],
+          [
+            "Ogre",
+            "Brute"
+          ],
+          [
+            "Pack Leader",
+            "Safety Mole",
+            "Hermit",
+            "Hermit"
+          ],
+          [
+            "Pack Leader",
+            "Safety Mole",
+            "Hermit",
+            "Fiend",
+            "Dragon Turtle"
+          ]
+        ],
+        "leaksPerWave": [
+          [],
+          [],
+          [
+            "Fiend"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [
+            "Kobra",
+            "Kobra",
+            "Kobra",
+            "Kobra",
+            "Kobra",
+            "Kobra",
+            "Kobra"
+          ],
+          [],
+          [
+            "Granddaddy",
+            "Brute",
+            "Imp",
+            "Imp"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "buildPerWave": [
+          [
+            "grarl_unit_id:1.5|13.5"
+          ],
+          [
+            "eggsack_unit_id:1.5|5.5"
+          ],
+          [
+            "eggsack_unit_id:1.5|5.5",
+            "pollywog_unit_id:1.5|2",
+            "pollywog_unit_id:0.5|2.5"
+          ],
+          [
+            "hydra_unit_id:1.5|5.5",
+            "pollywog_unit_id:1.5|2",
+            "pollywog_unit_id:0.5|2.5"
+          ],
+          [
+            "hydra_unit_id:1.5|5.5",
+            "pollywog_unit_id:1.5|2",
+            "pollywog_unit_id:0.5|2.5",
+            "sea_serpent_unit_id:3.5|13.5"
+          ],
+          [
+            "hydra_unit_id:1.5|5.5",
+            "pollywog_unit_id:1.5|2",
+            "seraphin_unit_id:0.5|2.5",
+            "sea_serpent_unit_id:3.5|13.5"
+          ],
+          [
+            "hydra_unit_id:1.5|5.5",
+            "pollywog_unit_id:1.5|2",
+            "seraphin_unit_id:0.5|2.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "pollywog_unit_id:2.5|2.5"
+          ],
+          [
+            "hydra_unit_id:1.5|5.5",
+            "seraphin_unit_id:1.5|2",
+            "seraphin_unit_id:0.5|2.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "pollywog_unit_id:2.5|2.5"
+          ],
+          [
+            "hydra_unit_id:1.5|5.5",
+            "seraphin_unit_id:1.5|2",
+            "seraphin_unit_id:0.5|2.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "pollywog_unit_id:2.5|2.5",
+            "grarl_unit_id:1.5|4.5"
+          ],
+          [
+            "hydra_unit_id:1.5|5.5",
+            "seraphin_unit_id:1.5|2",
+            "seraphin_unit_id:0.5|2.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "pollywog_unit_id:2.5|2.5",
+            "grarl_unit_id:1.5|4.5",
+            "deepcoiler_unit_id:4.5|13.5"
+          ],
+          [
+            "hydra_unit_id:1.5|5.5",
+            "seraphin_unit_id:1.5|2",
+            "seraphin_unit_id:0.5|2.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "pollywog_unit_id:2.5|2.5",
+            "grarl_unit_id:1.5|4.5",
+            "deepcoiler_unit_id:4.5|13.5",
+            "priestess_of_the_abyss_unit_id:0.5|4",
+            "grarl_unit_id:2.5|4"
+          ],
+          [
+            "hydra_unit_id:1.5|5.5",
+            "seraphin_unit_id:1.5|2",
+            "seraphin_unit_id:0.5|2.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "seraphin_unit_id:2.5|2.5",
+            "grarl_unit_id:1.5|4.5",
+            "deepcoiler_unit_id:4.5|13.5",
+            "priestess_of_the_abyss_unit_id:0.5|4",
+            "grarl_unit_id:2.5|4",
+            "deepcoiler_unit_id:2.5|13.5"
+          ],
+          [
+            "hydra_unit_id:1.5|5.5",
+            "seraphin_unit_id:1.5|2",
+            "seraphin_unit_id:0.5|2.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "seraphin_unit_id:2.5|2.5",
+            "grarl_unit_id:1.5|4.5",
+            "deepcoiler_unit_id:4.5|13.5",
+            "azeria_unit_id:0.5|4",
+            "king_claw_unit_id:2.5|4",
+            "deepcoiler_unit_id:2.5|13.5"
+          ],
+          [
+            "hydra_unit_id:1.5|5.5",
+            "seraphin_unit_id:1.5|2",
+            "seraphin_unit_id:0.5|2.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "seraphin_unit_id:2.5|2.5",
+            "ocean_templar_unit_id:1.5|4.5",
+            "deepcoiler_unit_id:4.5|13.5",
+            "azeria_unit_id:0.5|4",
+            "king_claw_unit_id:2.5|4",
+            "deepcoiler_unit_id:2.5|13.5",
+            "deepcoiler_unit_id:1.5|13.5"
+          ],
+          [
+            "hydra_unit_id:1.5|5.5",
+            "seraphin_unit_id:1.5|2",
+            "seraphin_unit_id:0.5|2.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "seraphin_unit_id:2.5|2.5",
+            "ocean_templar_unit_id:1.5|4.5",
+            "deepcoiler_unit_id:4.5|13.5",
+            "azeria_unit_id:0.5|4",
+            "king_claw_unit_id:2.5|4",
+            "deepcoiler_unit_id:2.5|13.5",
+            "deepcoiler_unit_id:1.5|13.5",
+            "whitemane_unit_id:1.5|3.5"
+          ],
+          [
+            "hydra_unit_id:1.5|5.5",
+            "seraphin_unit_id:0.5|2.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "ocean_templar_unit_id:1.5|4.5",
+            "deepcoiler_unit_id:4.5|13.5",
+            "azeria_unit_id:0.5|4",
+            "king_claw_unit_id:2.5|4",
+            "deepcoiler_unit_id:2.5|13.5",
+            "deepcoiler_unit_id:1.5|13.5",
+            "whitemane_unit_id:1.5|3.5",
+            "deepcoiler_unit_id:5.5|13.5",
+            "deepcoiler_unit_id:6.5|13.5"
+          ],
+          [
+            "hydra_unit_id:1.5|5.5",
+            "seraphin_unit_id:0.5|2.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "ocean_templar_unit_id:1.5|4.5",
+            "deepcoiler_unit_id:4.5|13.5",
+            "azeria_unit_id:0.5|4",
+            "king_claw_unit_id:2.5|4",
+            "deepcoiler_unit_id:2.5|13.5",
+            "deepcoiler_unit_id:1.5|13.5",
+            "whitemane_unit_id:1.5|3.5",
+            "deepcoiler_unit_id:5.5|13.5",
+            "deepcoiler_unit_id:6.5|13.5",
+            "antler_unit_id:2.5|5",
+            "deepcoiler_unit_id:0.5|13.5"
+          ],
+          [
+            "hydra_unit_id:1.5|5.5",
+            "seraphin_unit_id:0.5|2.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "ocean_templar_unit_id:1.5|4.5",
+            "deepcoiler_unit_id:4.5|13.5",
+            "azeria_unit_id:0.5|4",
+            "king_claw_unit_id:2.5|4",
+            "deepcoiler_unit_id:2.5|13.5",
+            "deepcoiler_unit_id:1.5|13.5",
+            "whitemane_unit_id:1.5|3.5",
+            "deepcoiler_unit_id:5.5|13.5",
+            "deepcoiler_unit_id:6.5|13.5",
+            "whitemane_unit_id:2.5|5",
+            "deepcoiler_unit_id:0.5|13.5",
+            "deepcoiler_unit_id:7.5|13.5"
+          ],
+          [
+            "hydra_unit_id:1.5|5.5",
+            "seraphin_unit_id:0.5|2.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "ocean_templar_unit_id:1.5|4.5",
+            "deepcoiler_unit_id:4.5|13.5",
+            "azeria_unit_id:0.5|4",
+            "king_claw_unit_id:2.5|4",
+            "deepcoiler_unit_id:2.5|13.5",
+            "deepcoiler_unit_id:1.5|13.5",
+            "whitemane_unit_id:1.5|3.5",
+            "deepcoiler_unit_id:5.5|13.5",
+            "deepcoiler_unit_id:6.5|13.5",
+            "whitemane_unit_id:2.5|5",
+            "deepcoiler_unit_id:0.5|13.5",
+            "deepcoiler_unit_id:7.5|13.5",
+            "whitemane_unit_id:0.5|5",
+            "king_claw_unit_id:2.5|3"
+          ],
+          [
+            "hydra_unit_id:1.5|5.5",
+            "seraphin_unit_id:0.5|2.5",
+            "deepcoiler_unit_id:3.5|13.5",
+            "ocean_templar_unit_id:1.5|4.5",
+            "deepcoiler_unit_id:4.5|13.5",
+            "azeria_unit_id:0.5|4",
+            "king_claw_unit_id:2.5|4",
+            "deepcoiler_unit_id:2.5|13.5",
+            "deepcoiler_unit_id:1.5|13.5",
+            "whitemane_unit_id:1.5|3.5",
+            "deepcoiler_unit_id:5.5|13.5",
+            "deepcoiler_unit_id:6.5|13.5",
+            "whitemane_unit_id:2.5|5",
+            "deepcoiler_unit_id:0.5|13.5",
+            "deepcoiler_unit_id:7.5|13.5",
+            "whitemane_unit_id:0.5|5",
+            "king_claw_unit_id:2.5|3",
+            "azeria_unit_id:1.5|2.5",
+            "azeria_unit_id:0.5|6",
+            "desert_pilgrim_unit_id:2.5|2"
+          ]
+        ],
+        "leakValue": 118,
+        "leaksCaughtValue": 511,
+        "leftAtSeconds": -1,
+        "kingUpgradesPerWave": [
+          [
+            "Upgrade King Attack"
+          ],
+          [],
+          [],
+          [
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack",
+            "Upgrade King Attack"
+          ],
+          [
+            "Upgrade King Attack",
+            "Upgrade King Attack",
+            "Upgrade King Spell"
+          ],
+          [
+            "Upgrade King Regen",
+            "Upgrade King Regen",
+            "Upgrade King Regen"
+          ],
+          [
+            "Upgrade King Regen",
+            "Upgrade King Regen"
+          ],
+          [
+            "Upgrade King Regen",
+            "Upgrade King Regen"
+          ],
+          [
+            "Upgrade King Regen"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "opponentKingUpgradesPerWave": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      }
+    ]
+  }

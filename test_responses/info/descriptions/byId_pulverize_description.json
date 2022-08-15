@@ -1,0 +1,6 @@
+{
+    "_id": "pulverize_description",
+    "category": "Ability",
+    "description": "This unit is a Pulverizer. It has a $1% ($2% for ranged) chance to stun its target for $3 seconds ($4 to bosses)",
+    "name": "pulverize"
+}
