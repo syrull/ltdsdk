@@ -21,7 +21,7 @@ import (
 
 func main() {
 	api := ltdsdk.NewLTDSDK("API_KEY", "https://apiv2.legiontd2.com/")
-	unit, _ := api.GetUnit("Pollywog", "9.06.4")
+	unit, _ := api.GetUnit("Pollywog")
 	fmt.Println(unit.Name)
 	fmt.Println(unit.DmgMax)
 }
@@ -35,40 +35,40 @@ $ go test
 
 ## Routes Covered
 
-#### Player
+```
+Player
+	[+] players/byName/%s
+	[+] players/byId/%s
+	[-] players/bestFriends/%s
+	[-] players/matchHistory/%s
+	[-] players/stats/%s
+	[-] players/stats
 
-[x] `players/byName/%s`
-[x] `players/byId/%s`
-[ ] `players/bestFriends/%s`
-[ ] `players/matchHistory/%s`
-[ ] `players/stats/%s`
-[ ] `players/stats`
+Units
 
-#### Units
+	[+] units/byName/%s
+	[-] units/byId/%s
+	[-] units/byVersion/%s
 
-[x] - `units/byName/%s`
-[ ] - `units/byId/%s`
-[ ] - `units/byVersion/%s`
+Games
 
-#### Games
+	[+] games/
+	[+] games/byId/%s
 
-[x] - `games/`
-[x] - `games/byId/%s`
+Info
 
-#### Info
-
-[x] - `info/abilities/byId/%s `
-[x] - `info/descriptions/%s`
-[x] - `info/spells/byId/%s`
-[ ] - `info/legions/byId/%s`
-[ ] - `info/legions/{offset}/{limit}`
-[ ] - `info/waves/byId/%s`
-[ ] - `info/waves/{offset}/{limit}`
-[ ] - `info/spells/byId/%s`
-[ ] - `info/spells/{offset}/{limit}`
-[ ] - `info/abilities/byId/%s`
-[ ] - `info/abilities/{offset}/{limi`t}
-[ ] - `info/research/byId/%s`
-[ ] - `info/research/{offset}/{limit`}
-[ ] - `info/descriptions/%s`
+	[+] info/abilities/byId/%s 
+	[+] info/descriptions/%s
+	[+] info/spells/byId/%s
+	[-] info/legions/byId/%s
+	[-] info/legions/{offset}/{limit}
+	[-] info/waves/byId/%s
+	[-] info/waves/{offset}/{limit}
+	[-] info/spells/byId/%s
+	[-] info/spells/{offset}/{limit}
+	[-] info/abilities/byId/%s
+	[-] info/abilities/{offset}/{limit}
+	[-] info/research/byId/%s
+	[-] info/research/{offset}/{limit}
+	[-] info/descriptions/%s
 ```
