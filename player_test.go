@@ -1,18 +1,20 @@
-package ltdsdk_test
+package ltdsdk
 
 import (
+	"net/http"
 	"testing"
 
 	"github.com/jarcoal/httpmock"
-	"github.com/syrull/ltdsdk"
 )
 
 func TestGetPlayerByName(t *testing.T) {
 	httpmock.Activate()
-	data := LoadFixture("test_responses/players/byName_syll.json")
 	httpmock.RegisterResponder("GET", "https://apiv2.legiontd2.com/players/byName/syll",
-		httpmock.NewStringResponder(200, data))
-	api := ltdsdk.NewLTDSDK("test_api_key", "https://apiv2.legiontd2.com/")
+		func(_ *http.Request) (*http.Response, error) {
+			data := LoadFixture("test_responses/players/byName_syll.json")
+			return httpmock.NewJsonResponse(200, data)
+		})
+	api := NewLTDSDK("test_api_key", "https://apiv2.legiontd2.com/")
 	player, err := api.GetPlayerByName("syll")
 	if err != nil {
 		t.Error("error during `GetPlayerByName`")
@@ -27,10 +29,12 @@ func TestGetPlayerByName(t *testing.T) {
 
 func TestGetPlayerById(t *testing.T) {
 	httpmock.Activate()
-	data := LoadFixture("test_responses/players/byId_42A9C67482E71FEA.json")
 	httpmock.RegisterResponder("GET", "https://apiv2.legiontd2.com/players/byId/42A9C67482E71FEA",
-		httpmock.NewStringResponder(200, data))
-	api := ltdsdk.NewLTDSDK("test_api_key", "https://apiv2.legiontd2.com/")
+		func(_ *http.Request) (*http.Response, error) {
+			data := LoadFixture("test_responses/players/byId_42A9C67482E71FEA.json")
+			return httpmock.NewJsonResponse(200, data)
+		})
+	api := NewLTDSDK("test_api_key", "https://apiv2.legiontd2.com/")
 	player, err := api.GetPlayerById("42A9C67482E71FEA")
 	if err != nil {
 		t.Error("error during `GetPlayerByName`")

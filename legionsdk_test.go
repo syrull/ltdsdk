@@ -1,24 +1,20 @@
-package ltdsdk_test
+package ltdsdk
 
 import (
 	"encoding/json"
 	"io/ioutil"
 	"log"
+	"os"
 )
 
-func LoadFixture(fileName string) string {
-	var fixture map[string]interface{}
-	content, err := ioutil.ReadFile(fileName)
+func LoadFixture(fileName string) any {
+	jsonFile, err := os.Open(fileName)
 	if err != nil {
-		log.Fatal("error when opening file: ", err)
+		log.Panic(err)
 	}
-	err = json.Unmarshal(content, &fixture)
-	if err != nil {
-		log.Fatal("Error during Unmarshal(): ", err)
-	}
-	jsonStr, err := json.Marshal(fixture)
-	if err != nil {
-		log.Fatal("Error during Unmarshal(): ", err)
-	}
-	return string(jsonStr)
+	defer jsonFile.Close()
+	byteValue, _ := ioutil.ReadAll(jsonFile)
+	var fixture any
+	json.Unmarshal([]byte(byteValue), &fixture)
+	return fixture
 }

@@ -1,18 +1,20 @@
-package ltdsdk_test
+package ltdsdk
 
 import (
+	"net/http"
 	"testing"
 
 	"github.com/jarcoal/httpmock"
-	"github.com/syrull/ltdsdk"
 )
 
 func TestGetDescription(t *testing.T) {
 	httpmock.Activate()
-	data := LoadFixture("test_responses/info/descriptions/byId_pulverize_description.json")
 	httpmock.RegisterResponder("GET", "https://apiv2.legiontd2.com/info/descriptions/pulverize_description",
-		httpmock.NewStringResponder(200, data))
-	api := ltdsdk.NewLTDSDK("test_api_key", "https://apiv2.legiontd2.com/")
+		func(_ *http.Request) (*http.Response, error) {
+			data := LoadFixture("test_responses/info/descriptions/byId_pulverize_description.json")
+			return httpmock.NewJsonResponse(200, data)
+		})
+	api := NewLTDSDK("test_api_key", "https://apiv2.legiontd2.com/")
 	desc, err := api.GetDescription("pulverize_description")
 	if err != nil {
 		t.Error("error during `GetDescription`")
