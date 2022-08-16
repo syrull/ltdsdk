@@ -55,22 +55,6 @@ type Game struct {
 	} `json:"playersData,omitempty"`
 }
 
-type GameCollection []struct {
-	Id                 string    `json:"_id"`
-	Version            string    `json:"version"`
-	Date               time.Time `json:"date"`
-	QueueType          string    `json:"queueType"`
-	EndingWave         int       `json:"endingWave"`
-	GameLength         int       `json:"gameLength"`
-	GameElo            int       `json:"gameElo"`
-	PlayerCount        int       `json:"playerCount"`
-	HumanCount         int       `json:"humanCount"`
-	SpellChoices       []string  `json:"spellChoices"`
-	LeftKingPercentHp  []float64 `json:"leftKingPercentHp"`
-	RightKingPercentHp []float64 `json:"rightKingPercentHp"`
-	KingSpell          string    `json:"kingSpell"`
-}
-
 type GameOptions struct {
 	Version        string `qs:"version"`
 	Limit          int    `qs:"limit"`
