@@ -2,7 +2,6 @@ package ltdsdk
 
 import (
 	"fmt"
-	"strconv"
 )
 
 type waveResponse struct {
@@ -33,40 +32,20 @@ type Wave struct {
 	WaveUnitId   string
 }
 
-func newWave(wr *waveResponse) (*Wave, error) {
-	amount, err := strconv.Atoi(wr.Amount)
-	if err != nil {
-		return nil, err
-	}
-	amount2, err := strconv.Atoi(wr.Amount2)
-	if err != nil {
-		return nil, err
-	}
-	levelNum, err := strconv.Atoi(wr.Amount2)
-	if err != nil {
-		return nil, err
-	}
-	prepareTime, err := strconv.Atoi(wr.PrepareTime)
-	if err != nil {
-		return nil, err
-	}
-	totalReward, err := strconv.Atoi(wr.TotalReward)
-	if err != nil {
-		return nil, err
-	}
+func newWave(wr *waveResponse) *Wave {
 	return &Wave{
 		Id:           wr.Id,
-		Amount:       amount,
-		Amount2:      amount2,
+		Amount:       parseStringToInt(wr.Amount, 0),
+		Amount2:      parseStringToInt(wr.Amount2, 0),
 		Category:     wr.Category,
 		IconPath:     wr.IconPath,
-		LevelNum:     levelNum,
+		LevelNum:     parseStringToInt(wr.LevelNum, 0),
 		Name:         wr.Name,
-		PrepareTime:  prepareTime,
+		PrepareTime:  parseStringToInt(wr.PrepareTime, 0),
 		SpellUnit2Id: wr.SpellUnit2Id,
-		TotalReward:  totalReward,
+		TotalReward:  parseStringToInt(wr.TotalReward, 0),
 		WaveUnitId:   wr.WaveUnitId,
-	}, nil
+	}
 }
 
 func (l *LegionTDSdk) GetWave(Id string) (*Wave, error) {
@@ -76,9 +55,6 @@ func (l *LegionTDSdk) GetWave(Id string) (*Wave, error) {
 	if err != nil {
 		return nil, err
 	}
-	wave, err := newWave(wr)
-	if err != nil {
-		return nil, err
-	}
+	wave := newWave(wr)
 	return wave, nil
 }

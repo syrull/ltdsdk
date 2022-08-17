@@ -33,3 +33,19 @@ func toQueryString(obj interface{}) map[string]string {
 	}
 	return queryStringMap
 }
+
+func parseStringToFloat32(str string, valueOnError float64) float32 {
+	f, err := strconv.ParseFloat(str, 32)
+	if err != nil {
+		f = valueOnError
+	}
+	return float32(f)
+}
+
+func parseStringToInt(str string, valueOnError int) int {
+	i, err := strconv.Atoi(str)
+	if err != nil {
+		i = valueOnError
+	}
+	return i
+}

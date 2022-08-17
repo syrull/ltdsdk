@@ -31,3 +31,35 @@ func TestStructToQueryString(t *testing.T) {
 		t.Error("error `qs[float64Field]` != '1337.1337133713'")
 	}
 }
+
+func TestParseStringToFloat32(t *testing.T) {
+	testStr := "1337.1"
+	val := parseStringToFloat32(testStr, 0)
+	if val != 1337.1 {
+		t.Error("error val != 1337.1")
+	}
+}
+
+func TestParseStringToFloat32OnError(t *testing.T) {
+	testStr := "1337.1error"
+	val := parseStringToFloat32(testStr, 0)
+	if val != 0 {
+		t.Error("error val != 0")
+	}
+}
+
+func TestParseStringToInt(t *testing.T) {
+	testStr := "1337"
+	val := parseStringToInt(testStr, 0)
+	if val != 1337 {
+		t.Error("error val != 1337")
+	}
+}
+
+func TestParseStringToIntOnError(t *testing.T) {
+	testStr := "1337errpr"
+	val := parseStringToInt(testStr, 0)
+	if val != 0 {
+		t.Error("error val != 0")
+	}
+}

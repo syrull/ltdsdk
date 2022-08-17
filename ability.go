@@ -2,7 +2,6 @@ package ltdsdk
 
 import (
 	"fmt"
-	"strconv"
 )
 
 type abilityResponse struct {
@@ -35,37 +34,17 @@ type Ability struct {
 }
 
 func newAbility(ar *abilityResponse) *Ability {
-	aoeRange, err := strconv.Atoi(ar.AoeRange)
-	if err != nil {
-		aoeRange = 0
-	}
-	duration, err := strconv.ParseFloat(ar.Duration, 32)
-	if err != nil {
-		duration = 0
-	}
-	bounces, err := strconv.Atoi(ar.Bounces)
-	if err != nil {
-		bounces = 0
-	}
-	baseDmg, err := strconv.ParseFloat(ar.BaseDamage, 32)
-	if err != nil {
-		baseDmg = 0
-	}
-	cd, err := strconv.ParseFloat(ar.Cooldown, 32)
-	if err != nil {
-		cd = 0
-	}
 	return &Ability{
 		Id:          ar.Id,
-		AoeRange:    aoeRange,
+		AoeRange:    parseStringToInt(ar.AoeRange, 0),
 		Description: ar.Description,
-		Duration:    float32(duration),
+		Duration:    parseStringToFloat32(ar.Duration, 0),
 		IconPath:    ar.IconPath,
 		Name:        ar.Name,
 		Tooltip:     ar.Tooltip,
-		Bounces:     bounces,
-		BaseDamage:  float32(baseDmg),
-		Cooldown:    float32(cd),
+		Bounces:     parseStringToInt(ar.Bounces, 0),
+		BaseDamage:  parseStringToFloat32(ar.BaseDamage, 0),
+		Cooldown:    parseStringToFloat32(ar.Cooldown, 0),
 		Raw:         *ar,
 	}
 }

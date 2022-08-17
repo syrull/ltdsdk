@@ -42,3 +42,16 @@ func TestGetWaveErrorResponse(t *testing.T) {
 		t.Error("error `GetWave` doesn't return error")
 	}
 }
+
+func TestGetWaveErrorOnNewWave(t *testing.T) {
+	httpmock.Activate()
+	httpmock.RegisterResponder("GET", "https://apiv2.legiontd2.com/info/waves/byId/level21_wave_id",
+		func(_ *http.Request) (*http.Response, error) {
+			return httpmock.NewStringResponse(404, "error"), nil
+		})
+	api := NewLTDSDK("test_api_key", "https://apiv2.legiontd2.com/")
+	_, err := api.GetWave("level21_wave_id")
+	if err == nil {
+		t.Error("error `GetWave` doesn't return error")
+	}
+}

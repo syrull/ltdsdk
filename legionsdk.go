@@ -3,8 +3,6 @@ package ltdsdk
 import (
 	"encoding/json"
 	"fmt"
-	"io"
-	"log"
 	"net/http"
 	"net/url"
 )
@@ -23,7 +21,7 @@ func NewLTDSDK(secretKey string, hostUrl string) *LegionTDSdk {
 func (l *LegionTDSdk) createAuthenticatedRequest(method string, url *url.URL) *http.Request {
 	req, err := http.NewRequest(method, url.String(), nil)
 	if err != nil {
-		log.Fatal(err)
+		panic(err)
 	}
 	req.Header.Set("x-api-key", l.secretKey)
 	return req
@@ -54,12 +52,7 @@ func (l *LegionTDSdk) GetRequest(endpoint string, queryString map[string]string,
 		message := fmt.Errorf("server error: %v", respCode)
 		return message
 	}
-	defer func(Body io.ReadCloser) {
-		err := Body.Close()
-		if err != nil {
-			log.Fatal(err)
-		}
-	}(resp.Body)
+	defer resp.Body.Close()
 	if err := json.NewDecoder(resp.Body).Decode(&obj); err != nil {
 		return err
 	}

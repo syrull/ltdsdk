@@ -2,7 +2,6 @@ package ltdsdk
 
 import (
 	"fmt"
-	"strconv"
 )
 
 type unitResponse struct {
@@ -98,99 +97,42 @@ type Unit struct {
 
 func newUnit(ur *unitResponse, l *LegionTDSdk) (*Unit, error) {
 	var abilities []Ability
-	unit := new(Unit)
 	for _, a := range ur.Abilities {
 		ability, err := l.GetAbility(a)
 		if err != nil {
-			return unit, err
+			return nil, err
 		}
 		abilities = append(abilities, *ability)
-	}
-	attackSpeedInverted, err := strconv.ParseFloat(ur.AspdInverted, 32)
-	if err != nil {
-		attackSpeedInverted = 0
-	}
-	attackRange, err := strconv.Atoi(ur.AttackRange)
-	if err != nil {
-		attackRange = 0
-	}
-	baseDmg, err := strconv.ParseFloat(ur.DmgBase, 32)
-	if err != nil {
-		baseDmg = 0
-	}
-	expDmg, err := strconv.ParseFloat(ur.DmgExpected, 32)
-	if err != nil {
-		expDmg = 0
-	}
-	maxDmg, err := strconv.ParseFloat(ur.DmgMax, 32)
-	if err != nil {
-		maxDmg = 0
-	}
-	dps, err := strconv.ParseFloat(ur.Dps, 32)
-	if err != nil {
-		dps = 0
-	}
-	goldBounty, err := strconv.Atoi(ur.GoldBounty)
-	if err != nil {
-		goldBounty = 0
-	}
-	goldCost, err := strconv.Atoi(ur.GoldCost)
-	if err != nil {
-		goldCost = 0
-	}
-	goldValue, err := strconv.Atoi(ur.GoldValue)
-	if err != nil {
-		goldValue = 0
-	}
-	health, err := strconv.Atoi(ur.Hp)
-	if err != nil {
-		health = 0
-	}
-	modelScale, err := strconv.ParseFloat(ur.ModelScale, 32)
-	if err != nil {
-		modelScale = 0
-	}
-	moveSpeed, err := strconv.ParseFloat(ur.MoveSpeed, 32)
-	if err != nil {
-		moveSpeed = 0
-	}
-	mana, err := strconv.Atoi(ur.Mp)
-	if err != nil {
-		mana = 0
-	}
-	totalValue, err := strconv.Atoi(ur.TotalValue)
-	if err != nil {
-		totalValue = 0
 	}
 	return &Unit{
 		Id:                  ur.UnitId,
 		Version:             ur.Version,
 		Abilities:           abilities,
 		ArmorType:           ur.ArmorType,
-		AttackSpeedInverted: float32(attackSpeedInverted),
+		AttackSpeedInverted: parseStringToFloat32(ur.AspdInverted, 0),
 		AttackMode:          ur.AttackMode,
-		AttackRange:         attackRange,
+		AttackRange:         parseStringToInt(ur.AttackRange, 0),
 		AttackType:          ur.AttackType,
 		CategoryClass:       ur.CategoryClass,
 		Description:         ur.Description,
-		BaseDamage:          float32(baseDmg),
-		ExpectedDamage:      float32(expDmg),
-		MaxDamage:           float32(maxDmg),
-		DamagePerSecond:     float32(dps),
+		BaseDamage:          parseStringToFloat32(ur.DmgBase, 0),
+		ExpectedDamage:      parseStringToFloat32(ur.DmgExpected, 0),
+		MaxDamage:           parseStringToFloat32(ur.DmgMax, 0),
+		DamagePerSecond:     parseStringToFloat32(ur.Dps, 0),
 		Flags:               ur.Flags,
-		GoldBounty:          goldBounty,
-		GoldCost:            goldCost,
-		GoldValue:           goldValue,
-		Health:              health,
+		GoldBounty:          parseStringToInt(ur.GoldBounty, 0),
+		GoldCost:            parseStringToInt(ur.GoldCost, 0),
+		GoldValue:           parseStringToInt(ur.GoldValue, 0),
+		Health:              parseStringToInt(ur.Hp, 0),
 		IsEnabled:           ur.IsEnabled,
 		InfoTier:            ur.InfoTier,
 		LegionId:            ur.LegionId,
-		ModelScale:          float32(modelScale),
-		MoveSpeed:           float32(moveSpeed),
+		ModelScale:          parseStringToFloat32(ur.ModelScale, 0),
+		MoveSpeed:           parseStringToFloat32(ur.MoveSpeed, 0),
 		MoveType:            ur.MoveType,
-		Mana:                mana,
+		Mana:                parseStringToInt(ur.Mp, 0),
 		Name:                ur.Name,
-		TotalValue:          totalValue,
+		TotalValue:          parseStringToInt(ur.TotalValue, 0),
 		UnitClass:           ur.UnitClass,
 		UpgradesFrom:        ur.UpgradesFrom,
 	}, nil
