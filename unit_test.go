@@ -44,3 +44,17 @@ func TestGetUnit(t *testing.T) {
 		t.Error("error `unit.ExpectedDamage` is not `38.00`")
 	}
 }
+
+func TestGetUnitErrorResponse(t *testing.T) {
+	httpmock.Activate()
+	httpmock.RegisterResponder("GET", "https://apiv2.legiontd2.com/units/byName/Atom",
+		func(_ *http.Request) (*http.Response, error) {
+			return httpmock.NewStringResponse(404, "error"), nil
+		})
+
+	api := NewLTDSDK("test_api_key", "https://apiv2.legiontd2.com/")
+	_, err := api.GetUnit("Atom")
+	if err == nil {
+		t.Error("error `GetUnit` doesn't return erorr")
+	}
+}

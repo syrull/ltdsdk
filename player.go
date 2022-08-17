@@ -3,7 +3,7 @@ package ltdsdk
 import "fmt"
 
 type Player struct {
-	ID          string `json:"_id"`
+	Id          string `json:"_id"`
 	AvatarURL   string `json:"avatarUrl"`
 	Name        string `json:"playerName"`
 	GuildAvatar string `json:"guildAvatar"`

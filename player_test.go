@@ -22,8 +22,21 @@ func TestGetPlayerByName(t *testing.T) {
 	if player.Name != "syll" {
 		t.Error("error `player.Name` is not `syll`")
 	}
-	if player.ID != "42A9C67482E71FEA" {
+	if player.Id != "42A9C67482E71FEA" {
 		t.Error("error `player.ID` is not `42A9C67482E71FEA`")
+	}
+}
+
+func TestGetPlayerByNameErrorResponse(t *testing.T) {
+	httpmock.Activate()
+	httpmock.RegisterResponder("GET", "https://apiv2.legiontd2.com/players/byName/syll",
+		func(_ *http.Request) (*http.Response, error) {
+			return httpmock.NewStringResponse(404, "error"), nil
+		})
+	api := NewLTDSDK("test_api_key", "https://apiv2.legiontd2.com/")
+	_, err := api.GetPlayerByName("syll")
+	if err == nil {
+		t.Error("error `GetPlayerByName` doesn't return erorr")
 	}
 }
 
@@ -42,7 +55,21 @@ func TestGetPlayerById(t *testing.T) {
 	if player.Name != "syll" {
 		t.Error("error `player.Name` is not `syll`")
 	}
-	if player.ID != "42A9C67482E71FEA" {
+	if player.Id != "42A9C67482E71FEA" {
 		t.Error("error `player.ID` is not `42A9C67482E71FEA`")
 	}
+}
+
+func TestGetPlayerByIdFakeId(t *testing.T) {
+	httpmock.Activate()
+	httpmock.RegisterResponder("GET", "https://apiv2.legiontd2.com/players/byId/fake_id",
+		func(_ *http.Request) (*http.Response, error) {
+			return httpmock.NewStringResponse(404, "error"), nil
+		})
+	api := NewLTDSDK("test_api_key", "https://apiv2.legiontd2.com/")
+	_, err := api.GetPlayerById("fake_id")
+	if err == nil {
+		t.Error("error `GetPlayerByName` doesn't return error")
+	}
+
 }

@@ -20,7 +20,7 @@ type Game struct {
 	RightKingPercentHp []float64 `json:"rightKingPercentHp"`
 	KingSpell          string    `json:"kingSpell"`
 	PlayersData        []struct {
-		PlayerID                    string          `json:"playerId"`
+		PlayerId                    string          `json:"playerId"`
 		PlayerName                  string          `json:"playerName"`
 		PlayerSlot                  int             `json:"playerSlot"`
 		Legion                      string          `json:"legion"`
@@ -79,23 +79,23 @@ func (l *LegionTDSdk) GetGameById(Id string) (*Game, error) {
 
 func (l *LegionTDSdk) GetGames(gameOpts *GameOptions) ([]*Game, error) {
 	var games []*Game
-	gameOptsDef := &GameOptions{}
+	var gameOptions GameOptions
 	// Set the default search options if strcut is empty
-	if gameOpts == gameOptsDef {
+	if *gameOpts == gameOptions {
 		gameOpts = &GameOptions{
 			Version:        "",
 			Limit:          50,
 			Offset:         0,
 			SortBy:         "date",
 			SortDirection:  1,
-			AfterDate:      time.Now().Format("2000-01-01 00:00:00"),
+			AfterDate:      time.Now().Add(-24 * time.Hour).Format("2000-01-01 00:00:00"),
 			BeforeDate:     time.Now().Format("2000-01-01 00:00:00"),
 			IncludeDetails: false,
 			QueueType:      "",
 		}
 	}
 	queryString := toQueryString(gameOpts)
-	err := l.GetRequest("games/", queryString, &games)
+	err := l.GetRequest("games", queryString, &games)
 	if err != nil {
 		return nil, err
 	}

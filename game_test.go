@@ -31,9 +31,18 @@ func TestGetGameById(t *testing.T) {
 	}
 }
 
+func TestGetGameByFakeId(t *testing.T) {
+	httpmock.Activate()
+	api := NewLTDSDK("test_api_key", "https://apiv2.legiontd2.com/")
+	_, err := api.GetGameById("1")
+	if err == nil {
+		t.Error("`GetGameById` doesn't return erorr")
+	}
+}
+
 func TestGetGames(t *testing.T) {
 	httpmock.Activate()
-	httpmock.RegisterResponder("GET", "https://apiv2.legiontd2.com/games/",
+	httpmock.RegisterResponder("GET", "https://apiv2.legiontd2.com/games",
 		func(_ *http.Request) (*http.Response, error) {
 			data := LoadFixture("test_responses/games/getAll.json")
 			return httpmock.NewJsonResponse(200, data)
@@ -46,7 +55,38 @@ func TestGetGames(t *testing.T) {
 	if len(games) != 2 {
 		t.Error("error `len(*games)` != 2")
 	}
+}
 
+func TestGetGamesWithErrorResponse(t *testing.T) {
+	httpmock.Activate()
+	httpmock.RegisterResponder("GET", "https://apiv2.legiontd2.com/games",
+		func(_ *http.Request) (*http.Response, error) {
+			return httpmock.NewStringResponse(404, "error"), nil
+		})
+	api := NewLTDSDK("test_api_key", "https://apiv2.legiontd2.com/")
+	_, err := api.GetGames(&GameOptions{})
+	if err == nil {
+		t.Error("`GetGameById` doesn't return error")
+	}
+}
+
+func TestGetGamesWithGameOptions(t *testing.T) {
+	httpmock.Activate()
+	httpmock.RegisterResponder("GET", "https://apiv2.legiontd2.com/games?version=v1337",
+		func(_ *http.Request) (*http.Response, error) {
+			data := LoadFixture("test_responses/games/getAll.json")
+			return httpmock.NewJsonResponse(200, data)
+		})
+	api := NewLTDSDK("test_api_key", "https://apiv2.legiontd2.com/")
+	games, err := api.GetGames(&GameOptions{
+		Version: "v1337",
+	})
+	if err != nil {
+		t.Error("error during `GetGameById`")
+	}
+	if len(games) != 2 {
+		t.Error("error `len(games)` != 2")
+	}
 }
 
 func TestGameOptionsToQueryString(t *testing.T) {

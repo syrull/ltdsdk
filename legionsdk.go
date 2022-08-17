@@ -41,14 +41,19 @@ func (l *LegionTDSdk) GetRequest(endpoint string, queryString map[string]string,
 		for k, v := range queryString {
 			values.Add(k, v)
 		}
+		url.RawQuery = values.Encode()
 	}
 	request := l.createAuthenticatedRequest("GET", url)
 	resp, err := l.client.Do(request)
 	if err != nil {
 		return err
 	}
-	if resp.StatusCode != 200 {
-		message := fmt.Errorf("API returned %v", resp.StatusCode)
+	switch respCode := resp.StatusCode; {
+	case respCode == 404:
+		message := fmt.Errorf("entry not found")
+		return message
+	case respCode >= 500:
+		message := fmt.Errorf("server error: %v", respCode)
 		return message
 	}
 	defer func(Body io.ReadCloser) {
@@ -71,9 +76,13 @@ func toQueryString(obj interface{}) map[string]string {
 		v := elem.Field(i).Interface()
 		switch v := v.(type) {
 		case int:
-			queryStringMap[k] = strconv.Itoa(v)
+			if v != 0 {
+				queryStringMap[k] = strconv.Itoa(v)
+			}
 		case string:
-			queryStringMap[k] = v
+			if v != "" {
+				queryStringMap[k] = v
+			}
 		}
 	}
 	return queryStringMap

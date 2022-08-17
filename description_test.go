@@ -23,3 +23,16 @@ func TestGetDescription(t *testing.T) {
 		t.Error("error `desc.Name` is not `pulverize`")
 	}
 }
+
+func TestGetDescriptionErrorResponse(t *testing.T) {
+	httpmock.Activate()
+	httpmock.RegisterResponder("GET", "https://apiv2.legiontd2.com/info/descriptions/pulverize_description",
+		func(_ *http.Request) (*http.Response, error) {
+			return httpmock.NewStringResponse(404, "error"), nil
+		})
+	api := NewLTDSDK("test_api_key", "https://apiv2.legiontd2.com/")
+	_, err := api.GetDescription("pulverize_description")
+	if err == nil {
+		t.Error("error GetDescription doesn't return error`")
+	}
+}
