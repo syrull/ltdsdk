@@ -60,14 +60,14 @@ Info
 	[+] info/abilities/byId/%s 
 	[+] info/descriptions/%s
 	[+] info/spells/byId/%s
+	[+] info/waves/byId/%s
+	[+] info/abilities/byId/%s
+	[+] info/spells/byId/%s
+	[-] info/abilities/{offset}/{limit}
 	[-] info/legions/byId/%s
 	[-] info/legions/{offset}/{limit}
-	[-] info/waves/byId/%s
 	[-] info/waves/{offset}/{limit}
-	[-] info/spells/byId/%s
 	[-] info/spells/{offset}/{limit}
-	[-] info/abilities/byId/%s
-	[-] info/abilities/{offset}/{limit}
 	[-] info/research/byId/%s
 	[-] info/research/{offset}/{limit}
 	[-] info/descriptions/%s

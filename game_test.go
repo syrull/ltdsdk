@@ -3,7 +3,6 @@ package ltdsdk
 import (
 	"net/http"
 	"testing"
-	"time"
 
 	"github.com/jarcoal/httpmock"
 )
@@ -86,33 +85,5 @@ func TestGetGamesWithGameOptions(t *testing.T) {
 	}
 	if len(games) != 2 {
 		t.Error("error `len(games)` != 2")
-	}
-}
-
-func TestGameOptionsToQueryString(t *testing.T) {
-	now := time.Now().Format("2000-01-01 00:00:00")
-	gameOpts := &GameOptions{
-		Version:        "",
-		Limit:          50,
-		Offset:         0,
-		SortBy:         "date",
-		SortDirection:  1,
-		AfterDate:      now,
-		BeforeDate:     now,
-		IncludeDetails: false,
-		QueueType:      "",
-	}
-	qs := toQueryString(gameOpts)
-	if qs["version"] != "" {
-		t.Error("error `qs['version']` != ''")
-	}
-	if qs["limit"] != "50" {
-		t.Error("error `qs['limit']` != 50")
-	}
-	if qs["limit"] != "50" {
-		t.Error("error `qs['limit']` != 50")
-	}
-	if qs["afterDate"] != now {
-		t.Errorf("error `qs['afterDate']` != %s", now)
 	}
 }

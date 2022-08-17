@@ -1,0 +1,13 @@
+{
+    "_id": "level21_wave_id",
+    "amount": "10",
+    "amount2": "1",
+    "category": "waves",
+    "iconPath": "Icons/LegionLord.png",
+    "levelNum": "21",
+    "name": "Legion Lord",
+    "prepareTime": "44",
+    "spellUnit2Id": "legion_king_unit_id",
+    "totalReward": "360",
+    "waveUnitId": "legion_lord_unit_id"
+  }
