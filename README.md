@@ -28,7 +28,7 @@ func main() {
 	api := ltdsdk.NewLTDSDK("API_KEY", "https://apiv2.legiontd2.com/")
 	unit, _ := api.GetUnit("Pollywog")
 	fmt.Println(unit.Name)
-	fmt.Println(unit.DmgMax)
+	fmt.Println(unit.DamagePerSecond)
 }
 ```
 
