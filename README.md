@@ -1,7 +1,8 @@
 # LegionTD 2 SDK for Go
 ![Coverage](https://img.shields.io/badge/Coverage-100.0%25-brightgreen)
 ![ghactions](https://github.com/syrull/ltdsdk/actions/workflows/go.yml/badge.svg)
-[Dev/API Chat](https://discord.gg/8h9tkPf6Sw)
+
+[Dev/API Discord](https://discord.gg/8h9tkPf6Sw)
 
 This is an experimental SDK that I am writting in Go, contributions are welcome.
 
