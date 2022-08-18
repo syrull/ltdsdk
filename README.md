@@ -7,7 +7,6 @@
 This is an experimental SDK that I am writting in Go, contributions are welcome.
 
 
-
 ## Getting started
 
 ```console
@@ -45,8 +44,8 @@ $ go test
 Player
 	[+] players/byName/%s
 	[+] players/byId/%s
+	[+] players/matchHistory/%s
 	[-] players/bestFriends/%s
-	[-] players/matchHistory/%s
 	[-] players/stats/%s
 	[-] players/stats
 

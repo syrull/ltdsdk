@@ -29,6 +29,8 @@ func toQueryString(obj interface{}) map[string]string {
 			if v != 0 {
 				queryStringMap[k] = fmt.Sprintf("%g", v)
 			}
+		case bool:
+			queryStringMap[k] = strconv.FormatBool(v)
 		}
 	}
 	return queryStringMap

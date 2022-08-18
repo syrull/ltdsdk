@@ -71,7 +71,7 @@ func TestGetGamesWithErrorResponse(t *testing.T) {
 
 func TestGetGamesWithGameOptions(t *testing.T) {
 	httpmock.Activate()
-	httpmock.RegisterResponder("GET", "https://apiv2.legiontd2.com/games?version=v1337",
+	httpmock.RegisterResponder("GET", "https://apiv2.legiontd2.com/games?includeDetails=false&version=v1337",
 		func(_ *http.Request) (*http.Response, error) {
 			data := LoadFixture("test_responses/games/getAll.json")
 			return httpmock.NewJsonResponse(200, data)

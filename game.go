@@ -6,53 +6,20 @@ import (
 )
 
 type Game struct {
-	Id                 string    `json:"_id"`
-	Version            string    `json:"version"`
-	Date               time.Time `json:"date"`
-	QueueType          string    `json:"queueType"`
-	EndingWave         int       `json:"endingWave"`
-	GameLength         int       `json:"gameLength"`
-	GameElo            int       `json:"gameElo"`
-	PlayerCount        int       `json:"playerCount"`
-	HumanCount         int       `json:"humanCount"`
-	SpellChoices       []string  `json:"spellChoices"`
-	LeftKingPercentHp  []float64 `json:"leftKingPercentHp"`
-	RightKingPercentHp []float64 `json:"rightKingPercentHp"`
-	KingSpell          string    `json:"kingSpell"`
-	PlayersData        []struct {
-		PlayerId                    string          `json:"playerId"`
-		PlayerName                  string          `json:"playerName"`
-		PlayerSlot                  int             `json:"playerSlot"`
-		Legion                      string          `json:"legion"`
-		Workers                     int             `json:"workers"`
-		Value                       int             `json:"value"`
-		Cross                       bool            `json:"cross"`
-		GameResult                  string          `json:"gameResult"`
-		OverallElo                  int             `json:"overallElo"`
-		Fighters                    string          `json:"fighters"`
-		Mercenaries                 string          `json:"mercenaries"`
-		StayedUntilEnd              bool            `json:"stayedUntilEnd"`
-		ChosenSpell                 string          `json:"chosenSpell"`
-		PartySize                   int             `json:"partySize"`
-		FirstWaveFighters           string          `json:"firstWaveFighters"`
-		Rolls                       string          `json:"rolls"`
-		LegionSpecificElo           int             `json:"legionSpecificElo"`
-		PartyMembers                []string        `json:"partyMembers"`
-		PartyMembersIds             []string        `json:"partyMembersIds"`
-		MvpScore                    int             `json:"mvpScore"`
-		NetWorthPerWave             []int           `json:"netWorthPerWave"`
-		WorkersPerWave              []int           `json:"workersPerWave"`
-		IncomePerWave               []int           `json:"incomePerWave"`
-		MercenariesSentPerWave      [][]interface{} `json:"mercenariesSentPerWave"`
-		MercenariesReceivedPerWave  [][]interface{} `json:"mercenariesReceivedPerWave"`
-		LeaksPerWave                [][]interface{} `json:"leaksPerWave"`
-		BuildPerWave                [][]string      `json:"buildPerWave"`
-		LeakValue                   int             `json:"leakValue"`
-		LeaksCaughtValue            int             `json:"leaksCaughtValue"`
-		LeftAtSeconds               float64         `json:"leftAtSeconds"`
-		KingUpgradesPerWave         [][]string      `json:"kingUpgradesPerWave"`
-		OpponentKingUpgradesPerWave [][]interface{} `json:"opponentKingUpgradesPerWave"`
-	} `json:"playersData,omitempty"`
+	Id                 string       `json:"_id"`
+	Version            string       `json:"version"`
+	Date               time.Time    `json:"date"`
+	QueueType          string       `json:"queueType"`
+	EndingWave         int          `json:"endingWave"`
+	GameLength         int          `json:"gameLength"`
+	GameElo            int          `json:"gameElo"`
+	PlayerCount        int          `json:"playerCount"`
+	HumanCount         int          `json:"humanCount"`
+	SpellChoices       []string     `json:"spellChoices"`
+	LeftKingPercentHp  []float64    `json:"leftKingPercentHp"`
+	RightKingPercentHp []float64    `json:"rightKingPercentHp"`
+	KingSpell          string       `json:"kingSpell"`
+	PlayersData        []PlayerData `json:"playersData,omitempty"`
 }
 
 type GameOptions struct {
@@ -79,9 +46,9 @@ func (l *LegionTDSdk) GetGameById(Id string) (*Game, error) {
 
 func (l *LegionTDSdk) GetGames(gameOpts *GameOptions) ([]*Game, error) {
 	var games []*Game
-	var gameOptions GameOptions
+	var gameOptsDef GameOptions
 	// Set the default search options if strcut is empty
-	if *gameOpts == gameOptions {
+	if *gameOpts == gameOptsDef {
 		gameOpts = &GameOptions{
 			Version:        "",
 			Limit:          50,
