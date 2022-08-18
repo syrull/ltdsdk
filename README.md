@@ -1,9 +1,10 @@
 # LegionTD 2 SDK for Go
 ![Coverage](https://img.shields.io/badge/Coverage-87.5%25-brightgreen)
+![ghactions](https://github.com/syrull/ltdsdk/actions/workflows/go.yml/badge.svg)
 
 This is an experimental SDK that I am writting in Go, contributions are welcome.
 
-![ghactions](https://github.com/syrull/ltdsdk/actions/workflows/go.yml/badge.svg)
+
 
 ## Getting started
 
