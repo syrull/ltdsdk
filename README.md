@@ -2,6 +2,8 @@
 
 This is an experimental SDK that I am writting in Go, contributions are welcome.
 
+![ghactions](https://github.com/syrull/ltdsdk/actions/workflows/go.yml/badge.svg)
+
 ## Getting started
 
 ```console
