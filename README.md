@@ -68,6 +68,7 @@ Info
 	[+] info/waves/byId/%s
 	[+] info/abilities/byId/%s
 	[+] info/spells/byId/%s
+	[+] info/descriptions/%s
 	[-] info/abilities/{offset}/{limit}
 	[-] info/legions/byId/%s
 	[-] info/legions/{offset}/{limit}
@@ -75,5 +76,5 @@ Info
 	[-] info/spells/{offset}/{limit}
 	[-] info/research/byId/%s
 	[-] info/research/{offset}/{limit}
-	[-] info/descriptions/%s
+	
 ```
