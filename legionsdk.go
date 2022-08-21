@@ -22,10 +22,7 @@ type LegionTDSdk struct {
 // NewLTDSDK creates a new LegionTDSdk object
 func NewLTDSDK(secretKey string, hostUrl string) *LegionTDSdk {
 	httpClient := http.DefaultClient
-	tempDir, err := ioutil.TempDir("", "httpcache")
-	if err != nil {
-		panic("Cannot setup cache")
-	}
+	tempDir, _ := ioutil.TempDir("", "httpcache")
 	defer os.RemoveAll(tempDir)
 	cache := diskcache.New(tempDir)
 	return &LegionTDSdk{secretKey: secretKey, client: httpClient, hostUrl: hostUrl, cache: cache}
@@ -43,10 +40,7 @@ func (l *LegionTDSdk) createAuthenticatedRequest(method string, url *url.URL) *h
 
 // Caching an object from a request.
 func (l *LegionTDSdk) cacheObject(key string, obj any) error {
-	bytes, err := json.Marshal(obj)
-	if err != nil {
-		return err
-	}
+	bytes, _ := json.Marshal(obj)
 	l.cache.Set(key, bytes)
 	return nil
 }

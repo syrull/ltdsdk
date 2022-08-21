@@ -3,7 +3,6 @@ package ltdsdk
 import (
 	"errors"
 	"io/ioutil"
-	"log"
 	"net/http"
 	"os"
 	"testing"
@@ -108,11 +107,29 @@ func TestExportToJson(t *testing.T) {
 	}
 	file, err := ioutil.TempFile("", "tmp_export.json")
 	if err != nil {
-		log.Fatal(err)
+		t.Error("error tmp_file cannot be created")
 	}
 	defer os.Remove(file.Name())
 	gameCollection.ExportToJson(file.Name())
 	if _, err := os.Stat(file.Name()); errors.Is(err, os.ErrNotExist) {
 		t.Error("error `ExportToJson` doesn't export the file")
+	}
+}
+
+func TestExportToJsonOnError(t *testing.T) {
+	httpmock.Activate()
+	httpmock.RegisterResponder("GET", "https://apiv2.legiontd2.com/games",
+		func(_ *http.Request) (*http.Response, error) {
+			data := LoadFixture("test_responses/games/getAll.json")
+			return httpmock.NewJsonResponse(200, data)
+		})
+	api := NewLTDSDK("test_api_key", "https://apiv2.legiontd2.com/")
+	gameCollection, err := api.GetGames(&GameOptions{})
+	if err != nil {
+		t.Error("error during `GetGames`")
+	}
+	err = gameCollection.ExportToJson("-4$/..Zzz]z-z")
+	if err == nil {
+		t.Error("error ExportToJson exporeted a file when it should have to!")
 	}
 }

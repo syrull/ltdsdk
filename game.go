@@ -87,9 +87,6 @@ func (gc *GameCollection) ExportToJson(outputFile string) error {
 	}
 	defer f.Close()
 	enc := json.NewEncoder(f)
-	err = enc.Encode(gc.Games)
-	if err != nil {
-		return err
-	}
+	enc.Encode(gc.Games)
 	return nil
 }
