@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"reflect"
 	"strconv"
+	"strings"
 )
 
 // Transforms an object's fields with `qs` tag and (int|string|float|bool) type
@@ -54,4 +55,22 @@ func parseStringToInt(str string, valueOnError int) int {
 		i = valueOnError
 	}
 	return i
+}
+
+// Converting a Slice to CSV
+func sliceToCsv(obj interface{}) string {
+	var csvString []string
+	switch v := obj.(type) {
+	case []int:
+		for _, i := range v {
+			csvString = append(csvString, strconv.Itoa(i))
+		}
+	case []string:
+		csvString = append(csvString, v...)
+	case []float64:
+		for _, i := range v {
+			csvString = append(csvString, fmt.Sprintf("%g", i))
+		}
+	}
+	return strings.Join(csvString[:], ",")
 }

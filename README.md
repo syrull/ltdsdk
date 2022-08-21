@@ -43,3 +43,4 @@ $ go test
 - [Getting all of the spells into a JSON files](examples/get_all_spells/main.go)
 - [Getting all of the units into a JSON files](examples/get_all_units/main.go)
 - [Export games to JSON](examples/export_games_to_json/main.go)
+- [Export games to SQL](examples/export_games_to_json/README.md)

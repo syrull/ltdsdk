@@ -5,6 +5,10 @@ import (
 	"fmt"
 	"os"
 	"time"
+
+	"github.com/samonzeweb/godb"
+	"github.com/samonzeweb/godb/adapters/sqlite"
+	"github.com/samonzeweb/godb/tablenamer"
 )
 
 type Game struct {
@@ -79,7 +83,7 @@ func (l *LegionTDSdk) GetGames(gameOpts *GameOptions) (*GameCollection, error) {
 	return &games, nil
 }
 
-// Exporting a GameCollection into a JSON file for further statistic
+// Exporting a GameCollection into a JSON file for further processing
 func (gc *GameCollection) ExportToJson(outputFile string) error {
 	f, err := os.Create(outputFile)
 	if err != nil {
@@ -88,5 +92,53 @@ func (gc *GameCollection) ExportToJson(outputFile string) error {
 	defer f.Close()
 	enc := json.NewEncoder(f)
 	enc.Encode(gc.Games)
+	return nil
+}
+
+// Exporting a GameCollection into a SQLite for further processing
+func (gc *GameCollection) ExportToSql(outputDb string) error {
+	db, err := godb.Open(sqlite.Adapter, outputDb)
+	db.SetDefaultTableNamer(tablenamer.Plural())
+	if err != nil {
+		fmt.Println(err)
+	}
+	for _, game := range gc.Games {
+		_, err := db.InsertInto("games").
+			Columns(
+				"version",
+				"date",
+				"queue_type",
+				"ending_wave",
+				"game_length",
+				"game_elo",
+				"player_count",
+				"human_count",
+				"spell_choices_csv",
+				"left_king_percent_hp_csv",
+				"right_king_percent_hp_csv",
+				"king_spell",
+			).
+			Values(
+				game.Version,
+				game.Date,
+				game.QueueType,
+				game.EndingWave,
+				game.GameLength,
+				game.GameElo,
+				game.PlayerCount,
+				game.HumanCount,
+				sliceToCsv(game.SpellChoices),
+				sliceToCsv(game.LeftKingPercentHp),
+				sliceToCsv(game.RightKingPercentHp),
+				game.KingSpell,
+			).
+			Do()
+		if err != nil {
+			panic(err)
+		}
+	}
+	if err != nil {
+		fmt.Println(err)
+	}
 	return nil
 }
