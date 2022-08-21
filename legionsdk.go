@@ -13,11 +13,13 @@ type LegionTDSdk struct {
 	secretKey string
 }
 
+// NewLTDSDK creates a new LegionTDSdk object
 func NewLTDSDK(secretKey string, hostUrl string) *LegionTDSdk {
 	httpClient := http.DefaultClient
 	return &LegionTDSdk{secretKey: secretKey, client: httpClient, hostUrl: hostUrl}
 }
 
+// Attaches an x-api-key header to the request
 func (l *LegionTDSdk) createAuthenticatedRequest(method string, url *url.URL) *http.Request {
 	req, err := http.NewRequest(method, url.String(), nil)
 	if err != nil {
@@ -27,7 +29,9 @@ func (l *LegionTDSdk) createAuthenticatedRequest(method string, url *url.URL) *h
 	return req
 }
 
-func (l *LegionTDSdk) GetRequest(endpoint string, queryString map[string]string, obj any) error {
+// getRequest performs a GET request to the API host and it serializes
+// the repsonse body into a native struct
+func (l *LegionTDSdk) getRequest(endpoint string, queryString map[string]string, obj any) error {
 	url, err := url.Parse(fmt.Sprintf("%s%s", l.hostUrl, endpoint))
 	if err != nil {
 		return err

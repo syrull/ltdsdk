@@ -95,6 +95,7 @@ type Unit struct {
 	Raw                 *unitResponse
 }
 
+// Creates a new Unit from a response object
 func newUnit(ur *unitResponse, l *LegionTDSdk) (*Unit, error) {
 	var abilities []Ability
 	for _, a := range ur.Abilities {
@@ -138,10 +139,12 @@ func newUnit(ur *unitResponse, l *LegionTDSdk) (*Unit, error) {
 	}, nil
 }
 
+// Getting a unit by name, it returns an error in a case where a unit id
+// is not being found.
 func (l *LegionTDSdk) GetUnit(unitName string) (*Unit, error) {
 	unitResp := new(unitResponse)
 	endpoint := fmt.Sprintf("units/byName/%s", unitName)
-	err := l.GetRequest(endpoint, nil, unitResp)
+	err := l.getRequest(endpoint, nil, unitResp)
 	if err != nil {
 		return nil, err
 	}

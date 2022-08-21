@@ -34,16 +34,22 @@ type GameOptions struct {
 	QueueType      string `qs:"queueType"`
 }
 
+// Getting a game by Id, returns an error if not found.
 func (l *LegionTDSdk) GetGameById(Id string) (*Game, error) {
 	game := new(Game)
 	endpoint := fmt.Sprintf("games/byId/%s", Id)
-	err := l.GetRequest(endpoint, nil, game)
+	err := l.getRequest(endpoint, nil, game)
 	if err != nil {
 		return nil, err
 	}
 	return game, nil
 }
 
+// Get latest (default=50) games, the method accpets GameOptions
+// which consists of Version, Limit, Offset, SortBy, SortDirection,
+// AfterDate, BeforeDate, IncludedDetails, QueueType
+// For more information about the GameOptions:
+// https://swagger.legiontd2.com/#/Games/getMatchesByFilter
 func (l *LegionTDSdk) GetGames(gameOpts *GameOptions) ([]*Game, error) {
 	var games []*Game
 	var gameOptsDef GameOptions
@@ -62,7 +68,7 @@ func (l *LegionTDSdk) GetGames(gameOpts *GameOptions) ([]*Game, error) {
 		}
 	}
 	queryString := toQueryString(gameOpts)
-	err := l.GetRequest("games", queryString, &games)
+	err := l.getRequest("games", queryString, &games)
 	if err != nil {
 		return nil, err
 	}

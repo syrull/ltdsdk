@@ -11,10 +11,12 @@ type Spell struct {
 	Tooltip  string `json:"tooltip"`
 }
 
+// Getting a spell by Id, it returns an error in a case where a spell id
+// is not being found.
 func (l *LegionTDSdk) GetSpell(Id string) (*Spell, error) {
 	spell := new(Spell)
 	endpoint := fmt.Sprintf("info/spells/byId/%s", Id)
-	err := l.GetRequest(endpoint, nil, spell)
+	err := l.getRequest(endpoint, nil, spell)
 	if err != nil {
 		return nil, err
 	}

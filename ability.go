@@ -33,6 +33,7 @@ type Ability struct {
 	Raw         abilityResponse
 }
 
+// Creates a new Ability object from a response with defaults.
 func newAbility(ar *abilityResponse) *Ability {
 	return &Ability{
 		Id:          ar.Id,
@@ -49,10 +50,11 @@ func newAbility(ar *abilityResponse) *Ability {
 	}
 }
 
+// Getting an Ability by name, returns an error if not found.
 func (l *LegionTDSdk) GetAbility(abilityName string) (*Ability, error) {
 	abilityResponse := new(abilityResponse)
 	endpoint := fmt.Sprintf("info/abilities/byId/%s", abilityName)
-	err := l.GetRequest(endpoint, nil, abilityResponse)
+	err := l.getRequest(endpoint, nil, abilityResponse)
 	if err != nil {
 		return nil, err
 	}

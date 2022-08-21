@@ -54,26 +54,33 @@ type MatchHistoryOptions struct {
 	CountResults bool `qs:"countResults"`
 }
 
+// Get a Player by name, it returns an error in a case where a player
+// Id is not being found.
 func (l *LegionTDSdk) GetPlayerByName(name string) (*Player, error) {
 	player := new(Player)
 	endpoint := fmt.Sprintf("players/byName/%s", name)
-	err := l.GetRequest(endpoint, nil, player)
+	err := l.getRequest(endpoint, nil, player)
 	if err != nil {
 		return nil, err
 	}
 	return player, nil
 }
 
+// Get a player by Id, returns a Player obj pointer, it returns
+// an error in a case where a player Id is not being found.
 func (l *LegionTDSdk) GetPlayerById(Id string) (*Player, error) {
 	player := new(Player)
 	endpoint := fmt.Sprintf("players/byId/%s", Id)
-	err := l.GetRequest(endpoint, nil, player)
+	err := l.getRequest(endpoint, nil, player)
 	if err != nil {
 		return nil, err
 	}
 	return player, nil
 }
 
+// Getting a player's match history, it accepts MatchHistoryOptions which are
+// consisting of Limit=10, Offset=0 and CountResults=false, use the offset
+// for pagination.
 func (l *LegionTDSdk) GetPlayerMatchHistory(Id string, matchOpts *MatchHistoryOptions) ([]*Game, error) {
 	var games []*Game
 	var matchOptsDef MatchHistoryOptions
@@ -87,7 +94,7 @@ func (l *LegionTDSdk) GetPlayerMatchHistory(Id string, matchOpts *MatchHistoryOp
 	}
 	queryString := toQueryString(matchOpts)
 	endpoint := fmt.Sprintf("players/matchHistory/%s", Id)
-	err := l.GetRequest(endpoint, queryString, &games)
+	err := l.getRequest(endpoint, queryString, &games)
 	if err != nil {
 		return nil, err
 	}

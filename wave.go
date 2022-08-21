@@ -32,6 +32,7 @@ type Wave struct {
 	WaveUnitId   string
 }
 
+// Creates a new Wave object with defaults from a response
 func newWave(wr *waveResponse) *Wave {
 	return &Wave{
 		Id:           wr.Id,
@@ -48,10 +49,11 @@ func newWave(wr *waveResponse) *Wave {
 	}
 }
 
+// Getting a Wave by Id
 func (l *LegionTDSdk) GetWave(Id string) (*Wave, error) {
 	wr := new(waveResponse)
 	endpoint := fmt.Sprintf("info/waves/byId/%s", Id)
-	err := l.GetRequest(endpoint, nil, wr)
+	err := l.getRequest(endpoint, nil, wr)
 	if err != nil {
 		return nil, err
 	}
