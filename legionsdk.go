@@ -90,6 +90,5 @@ func (l *LegionTDSdk) getRequest(endpoint string, queryString map[string]string,
 			return err
 		}
 	}
-
 	return nil
 }

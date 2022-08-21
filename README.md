@@ -38,43 +38,7 @@ func main() {
 $ go test
 ```
 
-## Routes Covered
+## Examples
 
-```
-Player
-	[+] players/byName/%s
-	[+] players/byId/%s
-	[+] players/matchHistory/%s
-	[-] players/bestFriends/%s
-	[-] players/stats/%s
-	[-] players/stats
-
-Units
-
-	[+] units/byName/%s
-	[-] units/byId/%s
-	[-] units/byVersion/%s
-
-Games
-
-	[+] games/
-	[+] games/byId/%s
-
-Info
-
-	[+] info/abilities/byId/%s 
-	[+] info/descriptions/%s
-	[+] info/spells/byId/%s
-	[+] info/waves/byId/%s
-	[+] info/abilities/byId/%s
-	[+] info/spells/byId/%s
-	[+] info/descriptions/%s
-	[-] info/abilities/{offset}/{limit}
-	[-] info/legions/byId/%s
-	[-] info/legions/{offset}/{limit}
-	[-] info/waves/{offset}/{limit}
-	[-] info/spells/{offset}/{limit}
-	[-] info/research/byId/%s
-	[-] info/research/{offset}/{limit}
-	
-```
+- [Getting all of the spells into a JSON files](examples/get_all_spells/main.go)
+- [Getting all of the units into a JSON files](examples/get_all_units/main.go)
