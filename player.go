@@ -12,40 +12,40 @@ type Player struct {
 }
 
 type PlayerData struct {
-	PlayerId                    string      `json:"playerId"`
-	PlayerName                  string      `json:"playerName"`
-	PlayerSlot                  int         `json:"playerSlot"`
-	Legion                      string      `json:"legion"`
-	Workers                     int         `json:"workers"`
-	Value                       int         `json:"value"`
-	Cross                       bool        `json:"cross"`
-	GameResult                  string      `json:"gameResult"`
-	OverallElo                  int         `json:"overallElo"`
-	ClassicElo                  int         `json:"classicElo"`
-	Fighters                    string      `json:"fighters"`
-	Mercenaries                 string      `json:"mercenaries"`
-	StayedUntilEnd              bool        `json:"stayedUntilEnd"`
-	ChosenSpell                 string      `json:"chosenSpell"`
-	ChosenSpellLocation         string      `json:"chosenSpellLocation"`
-	PartySize                   int         `json:"partySize"`
-	FirstWaveFighters           string      `json:"firstWaveFighters"`
-	Rolls                       string      `json:"rolls"`
-	LegionSpecificElo           int         `json:"legionSpecificElo"`
-	PartyMembers                []string    `json:"partyMembers"`
-	PartyMembersIds             []string    `json:"partyMembersIds"`
-	MvpScore                    int         `json:"mvpScore"`
-	NetWorthPerWave             []int       `json:"netWorthPerWave"`
-	WorkersPerWave              []int       `json:"workersPerWave"`
-	IncomePerWave               []int       `json:"incomePerWave"`
-	MercenariesSentPerWave      [][]string  `json:"mercenariesSentPerWave"`
-	MercenariesReceivedPerWave  [][]string  `json:"mercenariesReceivedPerWave"`
-	LeaksPerWave                [][]string  `json:"leaksPerWave"`
-	BuildPerWave                [][]string  `json:"buildPerWave"`
-	LeakValue                   int         `json:"leakValue"`
-	LeaksCaughtValue            int         `json:"leaksCaughtValue"`
-	LeftAtSeconds               interface{} `json:"leftAtSeconds"`
-	KingUpgradesPerWave         [][]string  `json:"kingUpgradesPerWave"`
-	OpponentKingUpgradesPerWave [][]string  `json:"opponentKingUpgradesPerWave"`
+	PlayerId                    string      `json:"playerId" db:"id,key,auto"`
+	PlayerName                  string      `json:"playerName" db:"player_name"`
+	PlayerSlot                  int         `json:"playerSlot" db:"player_slot"`
+	Legion                      string      `json:"legion" db:"legion"`
+	Workers                     int         `json:"workers" db:"workers"`
+	Value                       int         `json:"value" db:"value"`
+	Cross                       bool        `json:"cross" db:"cross"`
+	GameResult                  string      `json:"gameResult" db:"game_result"`
+	OverallElo                  int         `json:"overallElo" db:"overall_elo"`
+	ClassicElo                  int         `json:"classicElo" db:"classic_elo"`
+	Fighters                    string      `json:"fighters" db:"fighters"`
+	Mercenaries                 string      `json:"mercenaries" db:"mercenaries"`
+	StayedUntilEnd              bool        `json:"stayedUntilEnd" db:"stayed_until_end"`
+	ChosenSpell                 string      `json:"chosenSpell" db:"chosen_spell"`
+	ChosenSpellLocation         string      `json:"chosenSpellLocation" db:"chosen_spell_location"`
+	PartySize                   int         `json:"partySize" db:"party_size"`
+	FirstWaveFighters           string      `json:"firstWaveFighters" db:"first_wave_fighters"`
+	Rolls                       string      `json:"rolls" db:"rolls"`
+	LegionSpecificElo           int         `json:"legionSpecificElo" db:"legion_specific_elo"`
+	PartyMembers                []string    `json:"partyMembers" db:"party_members"`
+	PartyMembersIds             []string    `json:"partyMembersIds" db:"party_members_ids"`
+	MvpScore                    int         `json:"mvpScore" db:"mvp_score"`
+	NetWorthPerWave             []int       `json:"netWorthPerWave" db:"net_worth_per_wave"`
+	WorkersPerWave              []int       `json:"workersPerWave" db:"workers_per_wave"`
+	IncomePerWave               []int       `json:"incomePerWave" db:"income_per_wave"`
+	MercenariesSentPerWave      [][]string  `json:"mercenariesSentPerWave" db:"mvp_score"`
+	MercenariesReceivedPerWave  [][]string  `json:"mercenariesReceivedPerWave" db:"mercenaries_received_per_wave"`
+	LeaksPerWave                [][]string  `json:"leaksPerWave" db:"leaks_per_wave"`
+	BuildPerWave                [][]string  `json:"buildPerWave" db:"build_per_wave"`
+	LeakValue                   int         `json:"leakValue" db:"leak_value"`
+	LeaksCaughtValue            int         `json:"leaksCaughtValue" db:"leaks_caught_value"`
+	LeftAtSeconds               interface{} `json:"leftAtSeconds" db:"left_at_secs"`
+	KingUpgradesPerWave         [][]string  `json:"kingUpgradesPerWave" db:"king_upgrades_per_wave"`
+	OpponentKingUpgradesPerWave [][]string  `json:"opponentKingUpgradesPerWave" db:"opponent_king_upgrades_per_wave"`
 }
 
 type MatchHistoryOptions struct {

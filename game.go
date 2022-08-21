@@ -1,25 +1,31 @@
 package ltdsdk
 
 import (
+	"encoding/json"
 	"fmt"
+	"os"
 	"time"
 )
 
 type Game struct {
-	Id                 string       `json:"_id"`
-	Version            string       `json:"version"`
-	Date               time.Time    `json:"date"`
-	QueueType          string       `json:"queueType"`
-	EndingWave         int          `json:"endingWave"`
-	GameLength         int          `json:"gameLength"`
-	GameElo            int          `json:"gameElo"`
-	PlayerCount        int          `json:"playerCount"`
-	HumanCount         int          `json:"humanCount"`
-	SpellChoices       []string     `json:"spellChoices"`
-	LeftKingPercentHp  []float64    `json:"leftKingPercentHp"`
-	RightKingPercentHp []float64    `json:"rightKingPercentHp"`
-	KingSpell          string       `json:"kingSpell"`
-	PlayersData        []PlayerData `json:"playersData,omitempty"`
+	Id                 string       `json:"_id" db:"id,key,auto"`
+	Version            string       `json:"version" db:"version"`
+	Date               time.Time    `json:"date" db:"date"`
+	QueueType          string       `json:"queueType" db:"queue_type"`
+	EndingWave         int          `json:"endingWave" db:"ending_wave"`
+	GameLength         int          `json:"gameLength" db:"game_length"`
+	GameElo            int          `json:"gameElo" db:"game_elo"`
+	PlayerCount        int          `json:"playerCount" db:"player_count"`
+	HumanCount         int          `json:"humanCount" db:"human_count"`
+	SpellChoices       []string     `json:"spellChoices" db:"spell_choices"`
+	LeftKingPercentHp  []float64    `json:"leftKingPercentHp" db:"left_king_percent_hp"`
+	RightKingPercentHp []float64    `json:"rightKingPercentHp" db:"right_king_percent_hp"`
+	KingSpell          string       `json:"kingSpell" db:"king_spell"`
+	PlayersData        []PlayerData `json:"playersData,omitempty" db:"players_data"`
+}
+
+type GameCollection struct {
+	Games []*Game
 }
 
 type GameOptions struct {
@@ -28,8 +34,8 @@ type GameOptions struct {
 	Offset         int    `qs:"offset"`
 	SortBy         string `qs:"sortBy"`
 	SortDirection  int    `qs:"sortDirection"`
-	AfterDate      string `qs:"afterDate"`
-	BeforeDate     string `qs:"beforeDate"`
+	AfterDate      string `qs:"dateAfter"`
+	BeforeDate     string `qs:"dateBefore"`
 	IncludeDetails bool   `qs:"includeDetails"`
 	QueueType      string `qs:"queueType"`
 }
@@ -50,8 +56,8 @@ func (l *LegionTDSdk) GetGameById(Id string) (*Game, error) {
 // AfterDate, BeforeDate, IncludedDetails, QueueType
 // For more information about the GameOptions:
 // https://swagger.legiontd2.com/#/Games/getMatchesByFilter
-func (l *LegionTDSdk) GetGames(gameOpts *GameOptions) ([]*Game, error) {
-	var games []*Game
+func (l *LegionTDSdk) GetGames(gameOpts *GameOptions) (*GameCollection, error) {
+	var games GameCollection
 	var gameOptsDef GameOptions
 	// Set the default search options if strcut is empty
 	if *gameOpts == gameOptsDef {
@@ -60,17 +66,30 @@ func (l *LegionTDSdk) GetGames(gameOpts *GameOptions) ([]*Game, error) {
 			Limit:          50,
 			Offset:         0,
 			SortBy:         "date",
-			SortDirection:  1,
-			AfterDate:      time.Now().Add(-24 * time.Hour).Format("2000-01-01 00:00:00"),
-			BeforeDate:     time.Now().Format("2000-01-01 00:00:00"),
+			SortDirection:  -1,
 			IncludeDetails: false,
 			QueueType:      "",
 		}
 	}
 	queryString := toQueryString(gameOpts)
-	err := l.getRequest("games", queryString, &games)
+	err := l.getRequest("games", queryString, &games.Games)
 	if err != nil {
 		return nil, err
 	}
-	return games, nil
+	return &games, nil
+}
+
+// Exporting a GameCollection into a JSON file for further statistic
+func (gc *GameCollection) ExportToJson(outputFile string) error {
+	f, err := os.Create(outputFile)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	enc := json.NewEncoder(f)
+	err = enc.Encode(gc.Games)
+	if err != nil {
+		return err
+	}
+	return nil
 }
