@@ -16,7 +16,7 @@ const (
 
 func main() {
 	var wg sync.WaitGroup
-	api := ltdsdk.NewLTDSDK("bwTJFWPtIE7pa1u9KQ6Sz75gwuWPqV1o4snOzafJ", "https://apiv2.legiontd2.com/")
+	api := ltdsdk.NewLTDSDK("{secret_key}", "https://apiv2.legiontd2.com/")
 	for i := 0; i <= Pages*50; i += 50 {
 		wg.Add(1)
 		go func(api *ltdsdk.LegionTDSdk, offset int) {
