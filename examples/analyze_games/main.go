@@ -29,7 +29,7 @@ func main() {
 			})
 			gameCollection.ExportToSql(DbName)
 			fmt.Printf("Fetching offset: %v\n", offset)
-			wg.Done()
+			defer wg.Done()
 		}(api, i)
 	}
 	wg.Wait()
