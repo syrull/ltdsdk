@@ -1,6 +1,6 @@
 # Run the example
 
-You have to create the schema beforehand. Run the `games-schema.sql` and then
+Create empty file `games.sqlite` and execute the `games-schema.sql` on it. Then run:
 
 ```console
 $ go run main.go

@@ -105,6 +105,7 @@ func (gc *GameCollection) ExportToSql(outputDb string) error {
 	for _, game := range gc.Games {
 		_, err := db.InsertInto("games").
 			Columns(
+				"gameId",
 				"version",
 				"date",
 				"queue_type",
@@ -119,6 +120,7 @@ func (gc *GameCollection) ExportToSql(outputDb string) error {
 				"king_spell",
 			).
 			Values(
+				game.Id,
 				game.Version,
 				game.Date,
 				game.QueueType,
