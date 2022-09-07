@@ -98,6 +98,8 @@ func (gc *GameCollection) ExportToJson(outputFile string) error {
 // Exporting a GameCollection into a SQLite for further processing
 func (gc *GameCollection) ExportToSql(outputDb string) error {
 	db, err := godb.Open(sqlite.Adapter, outputDb)
+	// avoiding locked db: https://github.com/mattn/go-sqlite3/issues/274
+	db.CurrentDB().SetMaxOpenConns(1)
 	db.SetDefaultTableNamer(tablenamer.Plural())
 	if err != nil {
 		fmt.Println(err)

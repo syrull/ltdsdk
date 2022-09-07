@@ -1,7 +1,9 @@
 package ltdsdk
 
 import (
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
 )
 
 type unitResponse struct {
@@ -153,4 +155,17 @@ func (l *LegionTDSdk) GetUnit(unitName string) (*Unit, error) {
 		return nil, err
 	}
 	return unit, nil
+}
+
+// Exporting an Unit to JSON
+func (u *Unit) ExportToJson(folder string) error {
+	b, err := json.Marshal(u)
+	if err != nil {
+		return err
+	}
+	err = ioutil.WriteFile(folder+u.Name+".json", b, 0644)
+	if err != nil {
+		return err
+	}
+	return nil
 }

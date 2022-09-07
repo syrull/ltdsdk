@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sync"
 
 	"github.com/syrull/ltdsdk"
@@ -28,7 +27,6 @@ func main() {
 				QueueType:     QueueType,
 			})
 			gameCollection.ExportToSql(DbName)
-			fmt.Printf("Fetching offset: %v\n", offset)
 			defer wg.Done()
 		}(api, i)
 	}

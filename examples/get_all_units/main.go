@@ -2,7 +2,6 @@ package main
 
 import (
 	"bufio"
-	"encoding/json"
 	"errors"
 	"log"
 	"os"
@@ -36,13 +35,7 @@ func main() {
 			if err != nil {
 				panic(err)
 			}
-			f, err := os.Create(outFolder + "/" + unit + ".json")
-			if err != nil {
-				panic(err)
-			}
-			defer f.Close()
-			enc := json.NewEncoder(f)
-			err = enc.Encode(u)
+			u.ExportToJson("./units/")
 			if err != nil {
 				panic(err)
 			}
